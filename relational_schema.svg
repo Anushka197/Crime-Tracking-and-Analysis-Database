@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="96cm" height="63cm" viewBox="-1459 -1023 1904 1258" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="-1118.58" y="-359.812" width="203.1" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1118.58" y="-359.812" width="203.1" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-1017.03" y="-345.812">Case_Details</text>
+    <rect style="fill: #ffffff" x="-1118.58" y="-341.812" width="203.1" height="132"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1118.58" y="-341.812" width="203.1" height="132"/>
+    <polygon style="fill: #000000" points="-1115.58,-331.812 -1113.58,-328.812 -1111.58,-331.812 -1113.58,-334.812 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-325.812">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-325.812">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1109.58" y1="-324.212" x2="-953.28" y2="-324.212"/>
+    <polygon style="fill: #000000" points="-1115.58,-315.812 -1113.58,-312.812 -1111.58,-315.812 -1113.58,-318.812 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-309.812">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-309.812">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1109.58" y1="-308.212" x2="-945.58" y2="-308.212"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1113.58" cy="-299.812" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-293.812">crime_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-293.812">date</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1113.58" cy="-283.812" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-277.812">end_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-277.812">date</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1113.58" cy="-267.812" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-261.812">complaintDetails</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-261.812">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1113.58" cy="-251.812" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-245.812">crime_type</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-245.812">char</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1113.58" cy="-235.812" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-229.812">crime_location</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-229.812">int</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1113.58" cy="-219.812" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1109.58" y="-213.812">complainant_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-976.38" y="-213.812">int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-159.118" y="-301.716" width="187.7" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-159.118" y="-301.716" width="187.7" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-65.2682" y="-287.716">Witness</text>
+    <rect style="fill: #ffffff" x="-159.118" y="-283.716" width="187.7" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-159.118" y="-283.716" width="187.7" height="52"/>
+    <polygon style="fill: #000000" points="-156.118,-273.716 -154.118,-270.716 -152.118,-273.716 -154.118,-276.716 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-150.118" y="-267.716">W_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-32.3182" y="-267.716">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-150.118" y1="-266.116" x2="-9.2182" y2="-266.116"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-154.118" cy="-257.716" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-150.118" y="-251.716">family_contact</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-32.3182" y="-251.716">char</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-154.118" cy="-241.716" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-150.118" y="-235.716">testimony</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-32.3182" y="-235.716">varchar</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-536.028" y="-302.294" width="133.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-536.028" y="-302.294" width="133.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-469.128" y="-288.294">testifies_in</text>
+    <rect style="fill: #ffffff" x="-536.028" y="-284.294" width="133.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-536.028" y="-284.294" width="133.8" height="52"/>
+    <polygon style="fill: #000000" points="-533.028,-274.294 -531.028,-271.294 -529.028,-274.294 -531.028,-277.294 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-527.028" y="-268.294">W_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-440.028" y="-268.294">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-527.028" y1="-266.694" x2="-416.928" y2="-266.694"/>
+    <polygon style="fill: #000000" points="-533.028,-258.294 -531.028,-255.294 -529.028,-258.294 -531.028,-261.294 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-527.028" y="-252.294">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-440.028" y="-252.294">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-527.028" y1="-250.694" x2="-416.928" y2="-250.694"/>
+    <polygon style="fill: #000000" points="-533.028,-242.294 -531.028,-239.294 -529.028,-242.294 -531.028,-245.294 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-527.028" y="-236.294">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-440.028" y="-236.294">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-527.028" y1="-234.694" x2="-409.228" y2="-234.694"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-313.556" y="-487.41" width="187.7" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-313.556" y="-487.41" width="187.7" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-219.706" y="-473.41">victim</text>
+    <rect style="fill: #ffffff" x="-313.556" y="-469.41" width="187.7" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-313.556" y="-469.41" width="187.7" height="52"/>
+    <polygon style="fill: #000000" points="-310.556,-459.41 -308.556,-456.41 -306.556,-459.41 -308.556,-462.41 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-304.556" y="-453.41">V_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-186.756" y="-453.41">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-304.556" y1="-451.81" x2="-163.656" y2="-451.81"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-308.556" cy="-443.41" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-304.556" y="-437.41">harm_details</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-186.756" y="-437.41">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-308.556" cy="-427.41" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-304.556" y="-421.41">family_contact</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-186.756" y="-421.41">char</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-533.884" y="-487.556" width="133.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-533.884" y="-487.556" width="133.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-466.984" y="-473.556">affected_by</text>
+    <rect style="fill: #ffffff" x="-533.884" y="-469.556" width="133.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-533.884" y="-469.556" width="133.8" height="52"/>
+    <polygon style="fill: #000000" points="-530.884,-459.556 -528.884,-456.556 -526.884,-459.556 -528.884,-462.556 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-524.884" y="-453.556">V_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-437.884" y="-453.556">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-524.884" y1="-451.956" x2="-414.784" y2="-451.956"/>
+    <polygon style="fill: #000000" points="-530.884,-443.556 -528.884,-440.556 -526.884,-443.556 -528.884,-446.556 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-524.884" y="-437.556">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-437.884" y="-437.556">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-524.884" y1="-435.956" x2="-414.784" y2="-435.956"/>
+    <polygon style="fill: #000000" points="-530.884,-427.556 -528.884,-424.556 -526.884,-427.556 -528.884,-430.556 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-524.884" y="-421.556">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-437.884" y="-421.556">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-524.884" y1="-419.956" x2="-407.084" y2="-419.956"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-325.496" y="-587.188" width="133.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-325.496" y="-587.188" width="133.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-258.596" y="-573.188">police_officer</text>
+    <rect style="fill: #ffffff" x="-325.496" y="-569.188" width="133.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-325.496" y="-569.188" width="133.8" height="52"/>
+    <polygon style="fill: #000000" points="-322.496,-559.188 -320.496,-556.188 -318.496,-559.188 -320.496,-562.188 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-316.496" y="-553.188">P_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-229.496" y="-553.188">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-316.496" y1="-551.588" x2="-206.396" y2="-551.588"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-320.496" cy="-543.188" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-316.496" y="-537.188">rank</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-229.496" y="-537.188">char</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-320.496" cy="-527.188" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-316.496" y="-521.188">department</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-229.496" y="-521.188">char</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-589.766" y="-587.438" width="133.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-589.766" y="-587.438" width="133.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-522.866" y="-573.438">assigned_to</text>
+    <rect style="fill: #ffffff" x="-589.766" y="-569.438" width="133.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-589.766" y="-569.438" width="133.8" height="52"/>
+    <polygon style="fill: #000000" points="-586.766,-559.438 -584.766,-556.438 -582.766,-559.438 -584.766,-562.438 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-580.766" y="-553.438">P_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-493.766" y="-553.438">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-580.766" y1="-551.838" x2="-470.666" y2="-551.838"/>
+    <polygon style="fill: #000000" points="-586.766,-543.438 -584.766,-540.438 -582.766,-543.438 -584.766,-546.438 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-580.766" y="-537.438">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-493.766" y="-537.438">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-580.766" y1="-535.838" x2="-470.666" y2="-535.838"/>
+    <polygon style="fill: #000000" points="-586.766,-527.438 -584.766,-524.438 -582.766,-527.438 -584.766,-530.438 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-580.766" y="-521.438">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-493.766" y="-521.438">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-580.766" y1="-519.838" x2="-462.966" y2="-519.838"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-316.302" y="-651.822" width="180" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-316.302" y="-651.822" width="180" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-226.302" y="-637.822">criminal</text>
+    <rect style="fill: #ffffff" x="-316.302" y="-633.822" width="180" height="36"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-316.302" y="-633.822" width="180" height="36"/>
+    <polygon style="fill: #000000" points="-313.302,-623.822 -311.302,-620.822 -309.302,-623.822 -311.302,-626.822 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-307.302" y="-617.822">C_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-174.102" y="-617.822">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-307.302" y1="-616.222" x2="-151.002" y2="-616.222"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-311.302" cy="-607.822" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-307.302" y="-601.822">C_family_contact</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-174.102" y="-601.822">char</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1070.88" y="-651.788" width="187.7" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1070.88" y="-651.788" width="187.7" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-977.032" y="-637.788">punisment</text>
+    <rect style="fill: #ffffff" x="-1070.88" y="-633.788" width="187.7" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1070.88" y="-633.788" width="187.7" height="116"/>
+    <polygon style="fill: #000000" points="-1067.88,-623.788 -1065.88,-620.788 -1063.88,-623.788 -1065.88,-626.788 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1061.88" y="-617.788">C_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-920.982" y="-617.788">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1061.88" y1="-616.188" x2="-897.882" y2="-616.188"/>
+    <polygon style="fill: #000000" points="-1067.88,-607.788 -1065.88,-604.788 -1063.88,-607.788 -1065.88,-610.788 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1061.88" y="-601.788">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-920.982" y="-601.788">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1061.88" y1="-600.188" x2="-890.182" y2="-600.188"/>
+    <polygon style="fill: #000000" points="-1067.88,-591.788 -1065.88,-588.788 -1063.88,-591.788 -1065.88,-594.788 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1061.88" y="-585.788">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-920.982" y="-585.788">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1061.88" y1="-584.188" x2="-897.882" y2="-584.188"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1065.88" cy="-575.788" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1061.88" y="-569.788">fine</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-920.982" y="-569.788">int</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1065.88" cy="-559.788" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1061.88" y="-553.788">punish_start_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-920.982" y="-553.788">date</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1065.88" cy="-543.788" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1061.88" y="-537.788">punish_end_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-920.982" y="-537.788">date</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1065.88" cy="-527.788" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1061.88" y="-521.788">death_panelty</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-920.982" y="-521.788">char</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-419.67" y="35.586" width="233.9" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-419.67" y="35.586" width="233.9" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-302.72" y="49.586">suspect</text>
+    <rect style="fill: #ffffff" x="-419.67" y="53.586" width="233.9" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-419.67" y="53.586" width="233.9" height="68"/>
+    <polygon style="fill: #000000" points="-416.67,63.586 -414.67,66.586 -412.67,63.586 -414.67,60.586 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-410.67" y="69.586">S_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-246.67" y="69.586">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-410.67" y1="71.186" x2="-223.57" y2="71.186"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-414.67" cy="79.586" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-410.67" y="85.586">physical_description</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-246.67" y="85.586">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-414.67" cy="95.586" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-410.67" y="101.586">family_contact</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-246.67" y="101.586">char</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-414.67" cy="111.586" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-410.67" y="117.586">curr_arrest_status</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-246.67" y="117.586">char</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-768.674" y="-114.962" width="133.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-768.674" y="-114.962" width="133.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-701.774" y="-100.962">involved_in</text>
+    <rect style="fill: #ffffff" x="-768.674" y="-96.9624" width="133.8" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-768.674" y="-96.9624" width="133.8" height="52"/>
+    <polygon style="fill: #000000" points="-765.674,-86.9624 -763.674,-83.9624 -761.674,-86.9624 -763.674,-89.9624 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-759.674" y="-80.9624">S_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-672.674" y="-80.9624">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-759.674" y1="-79.3624" x2="-649.574" y2="-79.3624"/>
+    <polygon style="fill: #000000" points="-765.674,-70.9624 -763.674,-67.9624 -761.674,-70.9624 -763.674,-73.9624 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-759.674" y="-64.9624">open_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-672.674" y="-64.9624">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-759.674" y1="-63.3624" x2="-641.874" y2="-63.3624"/>
+    <polygon style="fill: #000000" points="-765.674,-54.9624 -763.674,-51.9624 -761.674,-54.9624 -763.674,-57.9624 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-759.674" y="-48.9624">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-672.674" y="-48.9624">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-759.674" y1="-47.3624" x2="-649.574" y2="-47.3624"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1115.38" y="-116.705" width="210.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1115.38" y="-116.705" width="210.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-1009.98" y="-102.705">evidence</text>
+    <rect style="fill: #ffffff" x="-1115.38" y="-98.7048" width="210.8" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1115.38" y="-98.7048" width="210.8" height="68"/>
+    <polygon style="fill: #000000" points="-1112.38,-88.7048 -1110.38,-85.7048 -1108.38,-88.7048 -1110.38,-91.7048 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1106.38" y="-82.7048">evidence_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-965.478" y="-82.7048">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1106.38" y1="-81.1048" x2="-942.378" y2="-81.1048"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1110.38" cy="-72.7048" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1106.38" y="-66.7048">description</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-965.478" y="-66.7048">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1110.38" cy="-56.7048" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1106.38" y="-50.7048">collection_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-965.478" y="-50.7048">date</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1110.38" cy="-40.7048" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1106.38" y="-34.7048">evidence_location</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-965.478" y="-34.7048">int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1063.97" y="-12.6763" width="141.5" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1063.97" y="-12.6763" width="141.5" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-993.218" y="1.32372">collected_for</text>
+    <rect style="fill: #ffffff" x="-1063.97" y="5.32372" width="141.5" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1063.97" y="5.32372" width="141.5" height="52"/>
+    <polygon style="fill: #000000" points="-1060.97,15.3237 -1058.97,18.3237 -1056.97,15.3237 -1058.97,12.3237 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1054.97" y="21.3237">evidence_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-960.268" y="21.3237">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1054.97" y1="22.9237" x2="-937.168" y2="22.9237"/>
+    <polygon style="fill: #000000" points="-1060.97,31.3237 -1058.97,34.3237 -1056.97,31.3237 -1058.97,28.3237 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1054.97" y="37.3237">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-960.268" y="37.3237">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1054.97" y1="38.9237" x2="-937.168" y2="38.9237"/>
+    <polygon style="fill: #000000" points="-1060.97,47.3237 -1058.97,50.3237 -1056.97,47.3237 -1058.97,44.3237 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1054.97" y="53.3237">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-960.268" y="53.3237">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1054.97" y1="54.9237" x2="-929.468" y2="54.9237"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-512.966" y="-172.853" width="133.8" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-512.966" y="-172.853" width="133.8" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-446.066" y="-158.853">pointed_to</text>
+    <rect style="fill: #ffffff" x="-512.966" y="-154.853" width="133.8" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-512.966" y="-154.853" width="133.8" height="68"/>
+    <polygon style="fill: #000000" points="-509.966,-144.853 -507.966,-141.853 -505.966,-144.853 -507.966,-147.853 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-503.966" y="-138.853">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-416.966" y="-138.853">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-503.966" y1="-137.253" x2="-386.166" y2="-137.253"/>
+    <polygon style="fill: #000000" points="-509.966,-128.853 -507.966,-125.853 -505.966,-128.853 -507.966,-131.853 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-503.966" y="-122.853">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-416.966" y="-122.853">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-503.966" y1="-121.253" x2="-393.866" y2="-121.253"/>
+    <polygon style="fill: #000000" points="-509.966,-112.853 -507.966,-109.853 -505.966,-112.853 -507.966,-115.853 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-503.966" y="-106.853">W_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-416.966" y="-106.853">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-503.966" y1="-105.253" x2="-393.866" y2="-105.253"/>
+    <polygon style="fill: #000000" points="-509.966,-96.8528 -507.966,-93.8528 -505.966,-96.8528 -507.966,-99.8528 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-503.966" y="-90.8528">S_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-416.966" y="-90.8528">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-503.966" y1="-89.2528" x2="-393.866" y2="-89.2528"/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="91.3808" y="-376.424" width="187.7" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="91.3808" y="-376.424" width="187.7" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="185.231" y="-362.424">person</text>
+    <rect style="fill: #ffffff" x="91.3808" y="-358.424" width="187.7" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="91.3808" y="-358.424" width="187.7" height="116"/>
+    <polygon style="fill: #000000" points="94.3808,-348.424 96.3808,-345.424 98.3808,-348.424 96.3808,-351.424 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.381" y="-342.424">personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="218.181" y="-342.424">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="100.381" y1="-340.824" x2="241.281" y2="-340.824"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="96.3808" cy="-332.424" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.381" y="-326.424">gender</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="218.181" y="-326.424">char</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="96.3808" cy="-316.424" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.381" y="-310.424">birth_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="218.181" y="-310.424">date</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="96.3808" cy="-300.424" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.381" y="-294.424">name</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="218.181" y="-294.424">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="96.3808" cy="-284.424" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.381" y="-278.424">address</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="218.181" y="-278.424">int</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="96.3808" cy="-268.424" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.381" y="-262.424">occupation</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="218.181" y="-262.424">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="96.3808" cy="-252.424" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="100.381" y="-246.424">contact_number</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="218.181" y="-246.424">char</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-627.966" y="-842.516" width="187.7" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-627.966" y="-842.516" width="187.7" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-534.116" y="-828.516">Trial</text>
+    <rect style="fill: #ffffff" x="-627.966" y="-824.516" width="187.7" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-627.966" y="-824.516" width="187.7" height="116"/>
+    <polygon style="fill: #000000" points="-624.966,-814.516 -622.966,-811.516 -620.966,-814.516 -622.966,-817.516 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-618.966" y="-808.516">trial_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-501.166" y="-808.516">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-618.966" y1="-806.916" x2="-470.366" y2="-806.916"/>
+    <polygon style="fill: #000000" points="-624.966,-798.516 -622.966,-795.516 -620.966,-798.516 -622.966,-801.516 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-618.966" y="-792.516">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-501.166" y="-792.516">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-618.966" y1="-790.916" x2="-478.066" y2="-790.916"/>
+    <polygon style="fill: #000000" points="-624.966,-782.516 -622.966,-779.516 -620.966,-782.516 -622.966,-785.516 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-618.966" y="-776.516">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-501.166" y="-776.516">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-618.966" y1="-774.916" x2="-470.366" y2="-774.916"/>
+    <polygon style="fill: #000000" points="-624.966,-766.516 -622.966,-763.516 -620.966,-766.516 -622.966,-769.516 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-618.966" y="-760.516">court_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-501.166" y="-760.516">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-618.966" y1="-758.916" x2="-478.066" y2="-758.916"/>
+    <polygon style="fill: #000000" points="-624.966,-750.516 -622.966,-747.516 -620.966,-750.516 -622.966,-753.516 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-618.966" y="-744.516">court_location</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-501.166" y="-744.516">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-618.966" y1="-742.916" x2="-478.066" y2="-742.916"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-622.966" cy="-734.516" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-618.966" y="-728.516">hearing</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-501.166" y="-728.516">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-622.966" cy="-718.516" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-618.966" y="-712.516">judge_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-501.166" y="-712.516">int</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-815.61" y="-12.4946" width="141.5" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-815.61" y="-12.4946" width="141.5" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-744.86" y="1.50538">linked_to</text>
+    <rect style="fill: #ffffff" x="-815.61" y="5.50538" width="141.5" height="68"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-815.61" y="5.50538" width="141.5" height="68"/>
+    <polygon style="fill: #000000" points="-812.61,15.5054 -810.61,18.5054 -808.61,15.5054 -810.61,12.5054 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-806.61" y="21.5054">evidence_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-711.91" y="21.5054">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-806.61" y1="23.1054" x2="-688.81" y2="23.1054"/>
+    <polygon style="fill: #000000" points="-812.61,31.5054 -810.61,34.5054 -808.61,31.5054 -810.61,28.5054 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-806.61" y="37.5054">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-711.91" y="37.5054">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-806.61" y1="39.1054" x2="-688.81" y2="39.1054"/>
+    <polygon style="fill: #000000" points="-812.61,47.5054 -810.61,50.5054 -808.61,47.5054 -810.61,44.5054 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-806.61" y="53.5054">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-711.91" y="53.5054">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-806.61" y1="55.1054" x2="-681.11" y2="55.1054"/>
+    <polygon style="fill: #000000" points="-812.61,63.5054 -810.61,66.5054 -808.61,63.5054 -810.61,60.5054 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-806.61" y="69.5054">S_personID</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-711.91" y="69.5054">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-806.61" y1="71.1054" x2="-688.81" y2="71.1054"/>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 265.446,63.586 A 80,80 0 0 0 345.446,-16.414"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-185.77" y1="63.586" x2="265.446" y2="63.586"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 345.446,-328.402 A 20.0217,20.0217 0 0 0 325.424,-348.424"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="345.446" y1="-16.414" x2="345.446" y2="-328.402"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="325.424" y1="-348.424" x2="288.816" y2="-348.424"/>
+    <polygon style="fill: #000000" points="281.316,-348.424 291.316,-353.424 288.816,-348.424 291.316,-343.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="281.316,-348.424 291.316,-353.424 288.816,-348.424 291.316,-343.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-179.77" y="57.586">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="285.08" y="-354.424">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 299.081,-484.672 A 74.5163,74.5163 0 0 0 224.564,-559.188"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-191.696" y1="-559.188" x2="224.564" y2="-559.188"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 295.452,-348.424 A 3.62885,3.62885 0 0 0 299.081,-352.053"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="299.081" y1="-484.672" x2="299.081" y2="-352.053"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="295.452" y1="-348.424" x2="288.817" y2="-348.424"/>
+    <polygon style="fill: #000000" points="281.317,-348.424 291.317,-353.424 288.817,-348.424 291.317,-343.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="281.317,-348.424 291.317,-353.424 288.817,-348.424 291.317,-343.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-185.696" y="-565.188">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="285.081" y="-354.424">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 409.354,-543.822 A 80,80 0 0 0 329.354,-623.822"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-136.301" y1="-623.822" x2="329.354" y2="-623.822"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 366.737,-348.424 A 42.6166,42.6166 0 0 0 409.354,-391.041"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="409.354" y1="-543.822" x2="409.354" y2="-391.041"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="366.737" y1="-348.424" x2="288.816" y2="-348.424"/>
+    <polygon style="fill: #000000" points="281.316,-348.424 291.316,-353.424 288.816,-348.424 291.316,-343.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="281.316,-348.424 291.316,-353.424 288.816,-348.424 291.316,-343.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-130.301" y="-629.822">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="285.08" y="-354.424">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -599.754,-623.788 A 0.0120208,0.0120208 0 0 0 -599.742,-623.8"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-883.182" y1="-623.788" x2="-599.754" y2="-623.788"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -599.734,-623.822 A 0.00777082,0.00777082 0 0 0 -599.742,-623.814"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-599.742" y1="-623.8" x2="-599.742" y2="-623.814"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-599.734" y1="-623.822" x2="-326.038" y2="-623.822"/>
+    <polygon style="fill: #000000" points="-318.538,-623.822 -328.538,-618.822 -326.038,-623.822 -328.538,-628.822 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-318.538,-623.822 -328.538,-618.822 -326.038,-623.822 -328.538,-628.822 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-877.182" y="-629.788">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-322.302" y="-629.822">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1120.53,-591.788 A 27.1543,27.1543 0 0 0 -1147.69,-564.634"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1070.88" y1="-591.788" x2="-1120.53" y2="-591.788"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1147.69,-338.66 A 6.84831,6.84831 0 0 0 -1140.84,-331.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1147.69" y1="-564.634" x2="-1147.69" y2="-338.66"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1140.84" y1="-331.812" x2="-1128.32" y2="-331.812"/>
+    <polygon style="fill: #000000" points="-1120.82,-331.812 -1130.82,-326.812 -1128.32,-331.812 -1130.82,-336.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1120.82,-331.812 -1130.82,-326.812 -1128.32,-331.812 -1130.82,-336.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1076.88" y="-597.788">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-337.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1186.09,-607.788 A 63.0075,63.0075 0 0 0 -1249.09,-544.781"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1070.88" y1="-607.788" x2="-1186.09" y2="-607.788"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1249.09,-358.513 A 42.7014,42.7014 0 0 0 -1206.39,-315.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1249.09" y1="-544.781" x2="-1249.09" y2="-358.513"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1206.39" y1="-315.812" x2="-1128.32" y2="-315.812"/>
+    <polygon style="fill: #000000" points="-1120.82,-315.812 -1130.82,-310.812 -1128.32,-315.812 -1130.82,-320.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1120.82,-315.812 -1130.82,-310.812 -1128.32,-315.812 -1130.82,-320.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1076.88" y="-613.788">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-321.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1158.46,-18.085 A 33.4087,33.4087 0 0 0 -1125.05,15.3237"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1063.97" y1="15.3237" x2="-1125.05" y2="15.3237"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1146.67,-88.7048 A 11.7903,11.7903 0 0 0 -1158.46,-76.9145"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1158.46" y1="-18.085" x2="-1158.46" y2="-76.9145"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1146.67" y1="-88.7048" x2="-1125.11" y2="-88.7048"/>
+    <polygon style="fill: #000000" points="-1117.61,-88.7048 -1127.61,-83.7048 -1125.11,-88.7048 -1127.61,-93.7048 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1117.61,-88.7048 -1127.61,-83.7048 -1125.11,-88.7048 -1127.61,-93.7048 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1069.97" y="9.32372">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1121.38" y="-94.7048">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1181.48,-10.2237 A 41.5475,41.5475 0 0 0 -1139.93,31.3238"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1063.97" y1="31.3238" x2="-1139.93" y2="31.3238"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1162.69,-331.812 A 18.797,18.797 0 0 0 -1181.48,-313.015"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1181.48" y1="-10.2237" x2="-1181.48" y2="-313.015"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1162.69" y1="-331.812" x2="-1128.32" y2="-331.812"/>
+    <polygon style="fill: #000000" points="-1120.82,-331.812 -1130.82,-326.812 -1128.32,-331.812 -1130.82,-336.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1120.82,-331.812 -1130.82,-326.812 -1128.32,-331.812 -1130.82,-336.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1069.97" y="25.3238">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-337.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -871.114,47.4412 A 0.0642053,0.0642053 0 0 0 -871.05,47.5054"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-815.61" y1="47.5054" x2="-871.05" y2="47.5054"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -871.114,47.3653 A 0.0415053,0.0415053 0 0 0 -871.156,47.3238"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-871.114" y1="47.4412" x2="-871.114" y2="47.3653"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-871.156" y1="47.3238" x2="-912.732" y2="47.3238"/>
+    <polygon style="fill: #000000" points="-920.232,47.3238 -910.232,42.3238 -912.732,47.3238 -910.232,52.3238 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-920.232,47.3238 -910.232,42.3238 -912.732,47.3238 -910.232,52.3238 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-821.61" y="41.5054">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-916.468" y="41.3238">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -865.168,15.4412 A 0.0642265,0.0642265 0 0 0 -865.104,15.5054"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-815.61" y1="15.5054" x2="-865.104" y2="15.5054"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -865.168,15.3652 A 0.041519,0.041519 0 0 0 -865.21,15.3237"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-865.168" y1="15.4412" x2="-865.168" y2="15.3652"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-865.21" y1="15.3237" x2="-912.732" y2="15.3237"/>
+    <polygon style="fill: #000000" points="-920.232,15.3237 -910.232,10.3237 -912.732,15.3237 -910.232,20.3237 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-920.232,15.3237 -910.232,10.3237 -912.732,15.3237 -910.232,20.3237 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-821.61" y="9.50538">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-916.468" y="9.32372">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1243.64,-16.1998 A 63.5236,63.5236 0 0 0 -1180.12,47.3238"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1063.97" y1="47.3238" x2="-1180.12" y2="47.3238"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1202.87,-315.812 A 40.7732,40.7732 0 0 0 -1243.64,-275.039"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1243.64" y1="-16.1998" x2="-1243.64" y2="-275.039"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1202.87" y1="-315.812" x2="-1128.32" y2="-315.812"/>
+    <polygon style="fill: #000000" points="-1120.82,-315.812 -1130.82,-310.812 -1128.32,-315.812 -1130.82,-320.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1120.82,-315.812 -1130.82,-310.812 -1128.32,-315.812 -1130.82,-320.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1069.97" y="41.3238">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-321.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -870.214,31.4412 A 0.0642053,0.0642053 0 0 0 -870.15,31.5054"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-815.61" y1="31.5054" x2="-870.15" y2="31.5054"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -870.214,31.3653 A 0.0415053,0.0415053 0 0 0 -870.256,31.3238"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-870.214" y1="31.4412" x2="-870.214" y2="31.3653"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-870.256" y1="31.3238" x2="-912.732" y2="31.3238"/>
+    <polygon style="fill: #000000" points="-920.232,31.3238 -910.232,26.3238 -912.732,31.3238 -910.232,36.3238 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-920.232,31.3238 -910.232,26.3238 -912.732,31.3238 -910.232,36.3238 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-821.61" y="25.5054">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-916.468" y="25.3238">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -499.65,63.5339 A 0.0284964,0.0284964 0 0 0 -499.678,63.5054"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-674.11" y1="63.5054" x2="-499.678" y2="63.5054"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -499.65,63.5676 A 0.0184214,0.0184214 0 0 0 -499.632,63.586"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-499.65" y1="63.5339" x2="-499.65" y2="63.5676"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-499.632" y1="63.586" x2="-429.406" y2="63.586"/>
+    <polygon style="fill: #000000" points="-421.906,63.586 -431.906,68.586 -429.406,63.586 -431.906,58.586 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-421.906,63.586 -431.906,68.586 -429.406,63.586 -431.906,58.586 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-668.11" y="57.5054">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-425.67" y="57.586">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -289.806,-128.853 A 45.7644,45.7644 0 0 0 -244.042,-174.617"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-379.166" y1="-128.853" x2="-289.806" y2="-128.853"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -244.042,-228.71 A 29.5842,29.5842 0 0 0 -273.626,-258.294"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-244.042" y1="-174.617" x2="-244.042" y2="-228.71"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-273.626" y1="-258.294" x2="-392.492" y2="-258.294"/>
+    <polygon style="fill: #000000" points="-399.992,-258.294 -389.992,-263.294 -392.492,-258.294 -389.992,-253.294 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-399.992,-258.294 -389.992,-263.294 -392.492,-258.294 -389.992,-253.294 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-373.166" y="-134.853">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-396.228" y="-264.294">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -301.837,-144.853 A 34.4507,34.4507 0 0 0 -267.386,-179.303"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-379.166" y1="-144.853" x2="-301.837" y2="-144.853"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -267.386,-220.023 A 22.2705,22.2705 0 0 0 -289.657,-242.294"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-267.386" y1="-179.303" x2="-267.386" y2="-220.023"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-289.657" y1="-242.294" x2="-392.492" y2="-242.294"/>
+    <polygon style="fill: #000000" points="-399.992,-242.294 -389.992,-247.294 -392.492,-242.294 -389.992,-237.294 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-399.992,-242.294 -389.992,-247.294 -392.492,-242.294 -389.992,-237.294 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-373.166" y="-150.853">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-396.228" y="-248.294">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -558.264,-96.8528 A 24.7742,24.7742 0 0 0 -583.038,-72.0786"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-512.966" y1="-96.8528" x2="-558.264" y2="-96.8528"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -583.038,15.6213 A 47.9647,47.9647 0 0 0 -535.073,63.586"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-583.038" y1="-72.0786" x2="-583.038" y2="15.6213"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-535.073" y1="63.586" x2="-429.406" y2="63.586"/>
+    <polygon style="fill: #000000" points="-421.906,63.586 -431.906,68.586 -429.406,63.586 -431.906,58.586 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-421.906,63.586 -431.906,68.586 -429.406,63.586 -431.906,58.586 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-518.966" y="-102.853">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-425.67" y="57.586">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -603.492,-75.8672 A 11.0952,11.0952 0 0 0 -614.587,-86.9624"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-634.874" y1="-86.9624" x2="-614.587" y2="-86.9624"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -603.492,14.2819 A 49.3041,49.3041 0 0 0 -554.188,63.586"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-603.492" y1="-75.8672" x2="-603.492" y2="14.2819"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-554.188" y1="63.586" x2="-429.406" y2="63.586"/>
+    <polygon style="fill: #000000" points="-421.906,63.586 -431.906,68.586 -429.406,63.586 -431.906,58.586 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-421.906,63.586 -431.906,68.586 -429.406,63.586 -431.906,58.586 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-628.874" y="-92.9624">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-425.67" y="57.586">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -877.42,-93.4099 A 38.4475,38.4475 0 0 0 -838.972,-54.9624"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-768.674" y1="-54.9624" x2="-838.972" y2="-54.9624"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -877.42,-321.798 A 10.014,10.014 0 0 0 -887.434,-331.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-877.42" y1="-93.4099" x2="-877.42" y2="-321.798"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-887.434" y1="-331.812" x2="-905.744" y2="-331.812"/>
+    <polygon style="fill: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-774.674" y="-60.9624">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-337.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -803.398,-83.2392 A 12.2768,12.2768 0 0 0 -791.121,-70.9624"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-768.674" y1="-70.9624" x2="-791.121" y2="-70.9624"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -803.398,-279.627 A 36.1848,36.1848 0 0 0 -839.583,-315.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-803.398" y1="-83.2392" x2="-803.398" y2="-279.627"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-839.583" y1="-315.812" x2="-905.744" y2="-315.812"/>
+    <polygon style="fill: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-774.674" y="-76.9624">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-321.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1221.57,-219.812 A 56.3267,56.3267 0 0 0 -1277.9,-163.485"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1118.58" y1="-219.812" x2="-1221.57" y2="-219.812"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1277.9,71.7624 A 80,80 0 0 0 -1197.9,151.762"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1277.9" y1="-163.485" x2="-1277.9" y2="71.7624"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -25.9276,151.762 A 80,80 0 0 0 54.0724,71.7624"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1197.9" y1="151.762" x2="-25.9276" y2="151.762"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 63.8207,-348.424 A 9.74829,9.74829 0 0 0 54.0724,-338.676"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="54.0724" y1="71.7624" x2="54.0724" y2="-338.676"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="63.8207" y1="-348.424" x2="81.6447" y2="-348.424"/>
+    <polygon style="fill: #000000" points="89.1447,-348.424 79.1447,-343.424 81.6447,-348.424 79.1447,-353.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="89.1447,-348.424 79.1447,-343.424 81.6447,-348.424 79.1447,-353.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-225.812">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="85.3808" y="-354.424">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -581.028,-290.204 A 15.9099,15.9099 0 0 0 -565.118,-274.294"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-536.028" y1="-274.294" x2="-565.118" y2="-274.294"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -563.607,-339.478 A 17.421,17.421 0 0 0 -581.028,-322.057"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-581.028" y1="-290.204" x2="-581.028" y2="-322.057"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -204.118,-316.228 A 23.2504,23.2504 0 0 0 -227.368,-339.478"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-563.607" y1="-339.478" x2="-227.368" y2="-339.478"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -204.118,-286.184 A 12.4676,12.4676 0 0 0 -191.65,-273.716"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-204.118" y1="-316.228" x2="-204.118" y2="-286.184"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-191.65" y1="-273.716" x2="-168.854" y2="-273.716"/>
+    <polygon style="fill: #000000" points="-161.354,-273.716 -171.354,-268.716 -168.854,-273.716 -171.354,-278.716 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-161.354,-273.716 -171.354,-268.716 -168.854,-273.716 -171.354,-278.716 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-542.028" y="-280.294">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-165.118" y="-279.716">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -390.731,-559.35 A 0.0883883,0.0883883 0 0 0 -390.819,-559.438"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-455.966" y1="-559.438" x2="-390.819" y2="-559.438"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -390.731,-559.245 A 0.0571383,0.0571383 0 0 0 -390.674,-559.188"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-390.731" y1="-559.35" x2="-390.731" y2="-559.245"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-390.674" y1="-559.188" x2="-335.232" y2="-559.188"/>
+    <polygon style="fill: #000000" points="-327.732,-559.188 -337.732,-554.188 -335.232,-559.188 -337.732,-564.188 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-327.732,-559.188 -337.732,-554.188 -335.232,-559.188 -337.732,-564.188 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-449.966" y="-565.438">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-331.496" y="-565.188">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -797.411,-543.438 A 74.8211,74.8211 0 0 0 -872.232,-468.617"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-589.766" y1="-543.438" x2="-797.411" y2="-543.438"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -884.08,-331.812 A 11.8483,11.8483 0 0 0 -872.232,-343.66"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-872.232" y1="-468.617" x2="-872.232" y2="-343.66"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-884.08" y1="-331.812" x2="-905.744" y2="-331.812"/>
+    <polygon style="fill: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-595.766" y="-549.438">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-337.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -723.05,-527.438 A 40,40 0 0 0 -763.05,-487.438"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-589.766" y1="-527.438" x2="-723.05" y2="-527.438"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -803.05,-315.812 A 40,40 0 0 0 -763.05,-355.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-763.05" y1="-487.438" x2="-763.05" y2="-355.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-803.05" y1="-315.812" x2="-905.744" y2="-315.812"/>
+    <polygon style="fill: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-595.766" y="-533.438">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-321.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -277.82,-112.853 A 55.428,55.428 0 0 0 -222.392,-168.281"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-379.166" y1="-112.853" x2="-277.82" y2="-112.853"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -222.392,-236.813 A 37.4813,37.4813 0 0 0 -259.873,-274.294"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-222.392" y1="-168.281" x2="-222.392" y2="-236.813"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-259.873" y1="-274.294" x2="-397.756" y2="-274.294"/>
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-389.992,-279.294 -399.992,-274.294 -389.992,-269.294 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-373.166" y="-118.853">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-396.228" y="-280.294">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -821.053,-443.556 A 39.5075,39.5075 0 0 0 -860.56,-404.049"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-533.884" y1="-443.556" x2="-821.053" y2="-443.556"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -876.535,-331.812 A 15.9749,15.9749 0 0 0 -860.56,-347.787"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-860.56" y1="-404.049" x2="-860.56" y2="-347.787"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-876.535" y1="-331.812" x2="-905.744" y2="-331.812"/>
+    <polygon style="fill: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-539.884" y="-449.556">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-337.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -763.993,-427.556 A 39.5075,39.5075 0 0 0 -803.5,-388.049"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-533.884" y1="-427.556" x2="-763.993" y2="-427.556"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -829.039,-315.812 A 25.5395,25.5395 0 0 0 -803.5,-341.351"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-803.5" y1="-388.049" x2="-803.5" y2="-341.351"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-829.039" y1="-315.812" x2="-905.744" y2="-315.812"/>
+    <polygon style="fill: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-539.884" y="-433.556">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-321.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -868.342,-284.287 A 25.9925,25.9925 0 0 0 -842.349,-258.294"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-536.028" y1="-258.294" x2="-842.349" y2="-258.294"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -868.342,-318.588 A 13.2236,13.2236 0 0 0 -881.566,-331.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-868.342" y1="-284.287" x2="-868.342" y2="-318.588"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-881.566" y1="-331.812" x2="-905.744" y2="-331.812"/>
+    <polygon style="fill: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-331.812 -903.244,-336.812 -905.744,-331.812 -903.244,-326.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-542.028" y="-264.294">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-337.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -786.892,-268.287 A 25.9925,25.9925 0 0 0 -760.899,-242.294"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-536.028" y1="-242.294" x2="-760.899" y2="-242.294"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -786.892,-299.009 A 16.8028,16.8028 0 0 0 -803.695,-315.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-786.892" y1="-268.287" x2="-786.892" y2="-299.009"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-803.695" y1="-315.812" x2="-905.744" y2="-315.812"/>
+    <polygon style="fill: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-913.244,-315.812 -903.244,-320.812 -905.744,-315.812 -903.244,-310.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-542.028" y="-248.294">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-909.48" y="-321.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -356.82,-459.504 A 0.0516188,0.0516188 0 0 0 -356.872,-459.556"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-400.084" y1="-459.556" x2="-356.872" y2="-459.556"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -356.82,-459.443 A 0.0333688,0.0333688 0 0 0 -356.787,-459.41"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-356.82" y1="-459.504" x2="-356.82" y2="-459.443"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-356.787" y1="-459.41" x2="-323.292" y2="-459.41"/>
+    <polygon style="fill: #000000" points="-315.792,-459.41 -325.792,-454.41 -323.292,-459.41 -325.792,-464.41 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-315.792,-459.41 -325.792,-454.41 -323.292,-459.41 -325.792,-464.41 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-394.084" y="-465.556">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-319.556" y="-465.41">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -17.2376,-421.008 A 38.4024,38.4024 0 0 0 -55.64,-459.41"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-125.856" y1="-459.41" x2="-55.64" y2="-459.41"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -17.2376,-374.086 A 25.6622,25.6622 0 0 0 8.42458,-348.424"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-17.2376" y1="-421.008" x2="-17.2376" y2="-374.086"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="8.42458" y1="-348.424" x2="81.6447" y2="-348.424"/>
+    <polygon style="fill: #000000" points="89.1447,-348.424 79.1447,-343.424 81.6447,-348.424 79.1447,-353.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="89.1447,-348.424 79.1447,-343.424 81.6447,-348.424 79.1447,-353.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-119.856" y="-465.41">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="85.3808" y="-354.424">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 31.4948,-273.716 A 1.59318,1.59318 0 0 0 33.088,-275.309"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="28.5818" y1="-273.716" x2="31.4948" y2="-273.716"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 50.2554,-348.424 A 17.1674,17.1674 0 0 0 33.088,-331.257"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="33.088" y1="-275.309" x2="33.088" y2="-331.257"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="50.2554" y1="-348.424" x2="81.6447" y2="-348.424"/>
+    <polygon style="fill: #000000" points="89.1447,-348.424 79.1447,-343.424 81.6447,-348.424 79.1447,-353.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="89.1447,-348.424 79.1447,-343.424 81.6447,-348.424 79.1447,-353.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="34.5818" y="-279.716">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="85.3808" y="-354.424">n</text>
+  </g>
+  <text font-size="16.9333" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:700" x="-667.906" y="-1005.92">
+    <tspan x="-667.906" y="-1005.92">Relational Schema</tspan>
+  </text>
+  <g>
+    <rect style="fill: #ffffff" x="82.072" y="-140.578" width="164.6" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="82.072" y="-140.578" width="164.6" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="164.372" y="-126.578">address</text>
+    <rect style="fill: #ffffff" x="82.072" y="-122.578" width="164.6" height="116"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="82.072" y="-122.578" width="164.6" height="116"/>
+    <polygon style="fill: #000000" points="85.072,-112.578 87.072,-109.578 89.072,-112.578 87.072,-115.578 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="91.072" y="-106.578">address_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="185.772" y="-106.578">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="91.072" y1="-104.978" x2="208.872" y2="-104.978"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="87.072" cy="-96.578" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="91.072" y="-90.578">place_name</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="185.772" y="-90.578">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="87.072" cy="-80.578" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="91.072" y="-74.578">block_no</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="185.772" y="-74.578">char</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="87.072" cy="-64.578" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="91.072" y="-58.578">district</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="185.772" y="-58.578">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="87.072" cy="-48.578" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="91.072" y="-42.578">state</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="185.772" y="-42.578">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="87.072" cy="-32.578" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="91.072" y="-26.578">postal_code</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="185.772" y="-26.578">varchar</text>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="87.072" cy="-16.578" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="91.072" y="-10.578">country</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="185.772" y="-10.578">varchar</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 299.339,-112.578 A 28.8047,28.8047 0 0 0 328.144,-141.383"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="246.672" y1="-112.578" x2="299.339" y2="-112.578"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 328.144,-270.519 A 13.9045,13.9045 0 0 0 314.239,-284.424"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="328.144" y1="-141.383" x2="328.144" y2="-270.519"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="314.239" y1="-284.424" x2="288.816" y2="-284.424"/>
+    <polygon style="fill: #000000" points="281.316,-284.424 291.316,-289.424 288.816,-284.424 291.316,-279.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="281.316,-284.424 291.316,-289.424 288.816,-284.424 291.316,-279.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="252.672" y="-118.578">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="285.08" y="-290.424">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1245.93,-235.812 A 69.65,69.65 0 0 0 -1315.58,-166.162"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1118.58" y1="-235.812" x2="-1245.93" y2="-235.812"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1315.58,117.418 A 80,80 0 0 0 -1235.58,197.418"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1315.58" y1="-166.162" x2="-1315.58" y2="117.418"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -139.837,197.418 A 80,80 0 0 0 -59.8374,117.418"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1235.58" y1="197.418" x2="-139.837" y2="197.418"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -13.1071,-112.578 A 46.7303,46.7303 0 0 0 -59.8374,-65.8477"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-59.8374" y1="117.418" x2="-59.8374" y2="-65.8477"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-13.1071" y1="-112.578" x2="72.3359" y2="-112.578"/>
+    <polygon style="fill: #000000" points="79.8359,-112.578 69.8359,-107.578 72.3359,-112.578 69.8359,-117.578 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="79.8359,-112.578 69.8359,-107.578 72.3359,-112.578 69.8359,-117.578 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-241.812">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="76.072" y="-118.578">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1131.06,-40.7048 A 8.5765,8.5765 0 0 0 -1139.64,-32.1283"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1115.38" y1="-40.7048" x2="-1131.06" y2="-40.7048"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1139.64,155.098 A 80,80 0 0 0 -1059.64,235.098"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1139.64" y1="-32.1283" x2="-1139.64" y2="155.098"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -94.2772,235.098 A 80,80 0 0 0 -14.2772,155.098"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1059.64" y1="235.098" x2="-94.2772" y2="235.098"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 16.3452,-112.578 A 30.6224,30.6224 0 0 0 -14.2772,-81.9556"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-14.2772" y1="155.098" x2="-14.2772" y2="-81.9556"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="16.3452" y1="-112.578" x2="72.3359" y2="-112.578"/>
+    <polygon style="fill: #000000" points="79.8359,-112.578 69.8359,-107.578 72.3359,-112.578 69.8359,-117.578 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="79.8359,-112.578 69.8359,-107.578 72.3359,-112.578 69.8359,-117.578 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1121.38" y="-46.7048">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="76.072" y="-118.578">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 341.92,-638.516 A 80,80 0 0 0 261.92,-718.516"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-440.266" y1="-718.516" x2="261.92" y2="-718.516"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 323.145,-348.424 A 18.7751,18.7751 0 0 0 341.92,-367.199"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="341.92" y1="-638.516" x2="341.92" y2="-367.199"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="323.145" y1="-348.424" x2="288.816" y2="-348.424"/>
+    <polygon style="fill: #000000" points="281.316,-348.424 291.316,-353.424 288.816,-348.424 291.316,-343.424 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="281.316,-348.424 291.316,-353.424 288.816,-348.424 291.316,-343.424 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-434.266" y="-724.516">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="285.08" y="-354.424">n</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1296.96" y="-826.634" width="164.6" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1296.96" y="-826.634" width="164.6" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-1214.66" y="-812.634">tried_in</text>
+    <rect style="fill: #ffffff" x="-1296.96" y="-808.634" width="164.6" height="84"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1296.96" y="-808.634" width="164.6" height="84"/>
+    <polygon style="fill: #000000" points="-1293.96,-798.634 -1291.96,-795.634 -1289.96,-798.634 -1291.96,-801.634 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1287.96" y="-792.634">case_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1170.16" y="-792.634">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1287.96" y1="-791.034" x2="-1147.06" y2="-791.034"/>
+    <polygon style="fill: #000000" points="-1293.96,-782.634 -1291.96,-779.634 -1289.96,-782.634 -1291.96,-785.634 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1287.96" y="-776.634">open_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1170.16" y="-776.634">date</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1287.96" y1="-775.034" x2="-1139.36" y2="-775.034"/>
+    <polygon style="fill: #000000" points="-1293.96,-766.634 -1291.96,-763.634 -1289.96,-766.634 -1291.96,-769.634 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1287.96" y="-760.634">court_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1170.16" y="-760.634">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1287.96" y1="-759.034" x2="-1147.06" y2="-759.034"/>
+    <polygon style="fill: #000000" points="-1293.96,-750.634 -1291.96,-747.634 -1289.96,-750.634 -1291.96,-753.634 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1287.96" y="-744.634">court_location</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1170.16" y="-744.634">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1287.96" y1="-743.034" x2="-1147.06" y2="-743.034"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1291.96" cy="-734.634" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1287.96" y="-728.634">entered_date</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1170.16" y="-728.634">date</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -880.162,-798.558 A 0.0417193,0.0417193 0 0 0 -880.12,-798.516"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-627.966" y1="-798.516" x2="-880.12" y2="-798.516"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -880.162,-798.607 A 0.0269693,0.0269693 0 0 0 -880.189,-798.634"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-880.162" y1="-798.558" x2="-880.162" y2="-798.607"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-880.189" y1="-798.634" x2="-1122.62" y2="-798.634"/>
+    <polygon style="fill: #000000" points="-1130.12,-798.634 -1120.12,-803.634 -1122.62,-798.634 -1120.12,-793.634 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1130.12,-798.634 -1120.12,-803.634 -1122.62,-798.634 -1120.12,-793.634 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-633.966" y="-804.516">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-1126.36" y="-804.634">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -737.062,-782.558 A 0.0417193,0.0417193 0 0 0 -737.02,-782.516"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-627.966" y1="-782.516" x2="-737.02" y2="-782.516"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -737.062,-782.607 A 0.0269693,0.0269693 0 0 0 -737.089,-782.634"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-737.062" y1="-782.558" x2="-737.062" y2="-782.607"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-737.089" y1="-782.634" x2="-1122.62" y2="-782.634"/>
+    <polygon style="fill: #000000" points="-1130.12,-782.634 -1120.12,-787.634 -1122.62,-782.634 -1120.12,-777.634 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1130.12,-782.634 -1120.12,-787.634 -1122.62,-782.634 -1120.12,-777.634 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-633.966" y="-788.516">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-1126.36" y="-788.634">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -880.162,-766.558 A 0.0417193,0.0417193 0 0 0 -880.12,-766.516"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-627.966" y1="-766.516" x2="-880.12" y2="-766.516"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -880.162,-766.607 A 0.0269693,0.0269693 0 0 0 -880.189,-766.634"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-880.162" y1="-766.558" x2="-880.162" y2="-766.607"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-880.189" y1="-766.634" x2="-1122.62" y2="-766.634"/>
+    <polygon style="fill: #000000" points="-1130.12,-766.634 -1120.12,-771.634 -1122.62,-766.634 -1120.12,-761.634 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1130.12,-766.634 -1120.12,-771.634 -1122.62,-766.634 -1120.12,-761.634 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-633.966" y="-772.516">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-1126.36" y="-772.634">n</text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="-1127.05" y="-933.806" width="187.7" height="18"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1127.05" y="-933.806" width="187.7" height="18"/>
+    <text font-size="11.2" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:700" x="-1033.2" y="-919.806">court</text>
+    <rect style="fill: #ffffff" x="-1127.05" y="-915.806" width="187.7" height="52"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="-1127.05" y="-915.806" width="187.7" height="52"/>
+    <polygon style="fill: #000000" points="-1124.05,-905.806 -1122.05,-902.806 -1120.05,-905.806 -1122.05,-908.806 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1118.05" y="-899.806">court_id</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1000.25" y="-899.806">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1118.05" y1="-898.206" x2="-977.148" y2="-898.206"/>
+    <polygon style="fill: #000000" points="-1124.05,-889.806 -1122.05,-886.806 -1120.05,-889.806 -1122.05,-892.806 "/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1118.05" y="-883.806">court_location</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1000.25" y="-883.806">int</text>
+    <line style="fill: none; fill-opacity:0; stroke-width: 1; stroke: #000000" x1="-1118.05" y1="-882.206" x2="-977.148" y2="-882.206"/>
+    <ellipse style="fill: none; fill-opacity:0; stroke-width: 0.2; stroke: #000000" cx="-1122.05" cy="-873.806" rx="2" ry="2"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1118.05" y="-867.806">court_level</text>
+    <text font-size="12.8" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="-1000.25" y="-867.806">varchar</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 444.916,-809.806 A 80,80 0 0 0 364.916,-889.806"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-939.348" y1="-889.806" x2="364.916" y2="-889.806"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M 378.268,-112.578 A 66.6476,66.6476 0 0 0 444.916,-179.226"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="444.916" y1="-809.806" x2="444.916" y2="-179.226"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="378.268" y1="-112.578" x2="256.408" y2="-112.578"/>
+    <polygon style="fill: #000000" points="248.908,-112.578 258.908,-117.578 256.408,-112.578 258.908,-107.578 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="248.908,-112.578 258.908,-117.578 256.408,-112.578 258.908,-107.578 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-933.348" y="-895.806">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="252.672" y="-118.578">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1371.96,-798.634 A 41.02,41.02 0 0 0 -1412.98,-757.614"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1296.96" y1="-798.634" x2="-1371.96" y2="-798.634"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1412.98,-411.812 A 80,80 0 0 0 -1332.98,-331.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1412.98" y1="-757.614" x2="-1412.98" y2="-411.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1332.98" y1="-331.812" x2="-1128.32" y2="-331.812"/>
+    <polygon style="fill: #000000" points="-1120.82,-331.812 -1130.82,-326.812 -1128.32,-331.812 -1130.82,-336.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1120.82,-331.812 -1130.82,-326.812 -1128.32,-331.812 -1130.82,-336.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1302.96" y="-804.634">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-337.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1340.43,-782.634 A 23.7765,23.7765 0 0 0 -1364.21,-758.858"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1296.96" y1="-782.634" x2="-1340.43" y2="-782.634"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1364.21,-395.812 A 80,80 0 0 0 -1284.21,-315.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1364.21" y1="-758.858" x2="-1364.21" y2="-395.812"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1284.21" y1="-315.812" x2="-1128.32" y2="-315.812"/>
+    <polygon style="fill: #000000" points="-1120.82,-315.812 -1130.82,-310.812 -1128.32,-315.812 -1130.82,-320.812 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1120.82,-315.812 -1130.82,-310.812 -1128.32,-315.812 -1130.82,-320.812 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1302.96" y="-788.634">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1124.58" y="-321.812">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1458.39,-815.839 A 49.2047,49.2047 0 0 0 -1409.18,-766.634"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1296.96" y1="-766.634" x2="-1409.18" y2="-766.634"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1426.58,-905.806 A 31.8082,31.8082 0 0 0 -1458.39,-873.998"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1458.39" y1="-815.839" x2="-1458.39" y2="-873.998"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1426.58" y1="-905.806" x2="-1136.78" y2="-905.806"/>
+    <polygon style="fill: #000000" points="-1129.28,-905.806 -1139.28,-900.806 -1136.78,-905.806 -1139.28,-910.806 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1129.28,-905.806 -1139.28,-900.806 -1136.78,-905.806 -1139.28,-910.806 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1302.96" y="-772.634">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1133.05" y="-911.806">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -880.162,-750.558 A 0.0417193,0.0417193 0 0 0 -880.12,-750.516"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-627.966" y1="-750.516" x2="-880.12" y2="-750.516"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -880.162,-750.607 A 0.0269693,0.0269693 0 0 0 -880.189,-750.634"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-880.162" y1="-750.558" x2="-880.162" y2="-750.607"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-880.189" y1="-750.634" x2="-1122.62" y2="-750.634"/>
+    <polygon style="fill: #000000" points="-1130.12,-750.634 -1120.12,-755.634 -1122.62,-750.634 -1120.12,-745.634 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1130.12,-750.634 -1120.12,-755.634 -1122.62,-750.634 -1120.12,-745.634 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-633.966" y="-756.516">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:700" x="-1126.36" y="-756.634">n</text>
+  </g>
+  <g>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1437.17,-799.839 A 49.2047,49.2047 0 0 0 -1387.97,-750.634"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1296.96" y1="-750.634" x2="-1387.97" y2="-750.634"/>
+    <path style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" d="M -1405.37,-889.806 A 31.8082,31.8082 0 0 0 -1437.17,-857.998"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1437.17" y1="-799.839" x2="-1437.17" y2="-857.998"/>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="-1405.37" y1="-889.806" x2="-1136.78" y2="-889.806"/>
+    <polygon style="fill: #000000" points="-1129.28,-889.806 -1139.28,-884.806 -1136.78,-889.806 -1139.28,-894.806 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="-1129.28,-889.806 -1139.28,-884.806 -1136.78,-889.806 -1139.28,-894.806 "/>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1302.96" y="-756.634">1</text>
+    <text font-size="16" style="fill: #000000;text-anchor:end;font-family:monospace;font-style:normal;font-weight:700" x="-1133.05" y="-895.806">n</text>
+  </g>
+</svg>
