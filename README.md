@@ -27,7 +27,7 @@ This project models the lifecycle of a criminal case — from reporting and evid
 
 ---
 
-## 🧠 Database Design
+## Database Design
 
 The relational model was crafted using:
 
