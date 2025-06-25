@@ -56,7 +56,7 @@ Key entities and relationships include:
 
 ---
 
-##👥 Team Members
+## 👥 Team Members
 - Manan Chhabhaya
 - Kresha Vora
 - Anushka Prajapati
