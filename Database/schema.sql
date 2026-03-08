@@ -2,8 +2,7 @@
 -- PostgreSQL lowercases everything — CrimeDB → crimedb, personID → personid
 -- Exception: if you quoted the name on creation (e.g. CREATE DATABASE "CrimeDB"), case is preserved — but that creates more headaches than it solves, so just use lowercase consistently.
 
-CREATE SCHEMA crimedb;
-SET SEARCH_PATH TO crimedb;
+
 
 CREATE TABLE Address (
     address_id      INT PRIMARY KEY NOT NULL,

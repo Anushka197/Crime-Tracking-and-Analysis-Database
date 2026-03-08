@@ -1,4 +1,4 @@
-SET SEARCH_PATH TO crimetrack;
+
 
 -- ==================== ADDRESS TABLE ====================
 INSERT INTO Address (address_id, street_address, city, state, postal_code, country) VALUES
