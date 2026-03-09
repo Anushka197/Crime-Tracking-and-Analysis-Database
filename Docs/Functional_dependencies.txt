@@ -1,0 +1,67 @@
+Minimal Functional Dependency Set
+
+Functional dependencies (FDs) derived from the schema:
+
+1. PersonID → gender, birth_date, first_name, middle_name, last_name, address_id, occupation, contact_number, rank, department, family_contact, physical_description, arrest_status, harm_details, testimony
+2. address_id → street_address, city, state, postal_code, country
+3. {case_id, open_date} → crime_date, end_date, complaint_detail, crime_type, crime_location, case_status, PersonID
+4. {case_id, open_date, trial_number} → hearing, judge_id, court_level
+5. evidence_id → description, collection_date
+6. {case_id, open_date, PersonID} → fine, jail_start_date, jail_end_date, death_penalty
+
+Proof That Relations Are in BCNF
+
+Person Relation:
+- Primary key: personID
+- Functional dependency: personID → gender, birth_date, first_name, middle_name, last_name, address_id, occupation, contact_number
+- This relation is in BCNF.
+
+Address Relation:
+- Primary key: address_id
+- Functional dependency: address_id → street_address, city, state, postal_code, country
+- This relation is in BCNF.
+
+Case_Details Relation:
+- Primary key: {case_id, open_date}
+- Functional dependency: {case_id, open_date} → crime_date, end_date, complaint_detail, crime_type, crime_location, case_status, PersonID
+- This relation is in BCNF.
+
+Trial Relation:
+- Primary key: {case_id, open_date, trial_number}
+- Functional dependency: {case_id, open_date, trial_number} → hearing, judge_id, court_level
+- This relation is in BCNF.
+
+Police_Officer Relation:
+- Primary key: p_personID
+- Functional dependency: p_personID → rank, department
+- This relation is in BCNF.
+
+Criminal Relation:
+- Primary key: c_personID
+- Functional dependency: c_personID → c_family_contact
+- This relation is in BCNF.
+
+Suspect Relation:
+- Primary key: s_personID
+- Functional dependency: s_personID → physical_description, family_contact, arrest_status
+- This relation is in BCNF.
+
+Victim Relation:
+- Primary key: v_personID
+- Functional dependency: v_personID → harm_details, family_contact
+- This relation is in BCNF.
+
+Witness Relation:
+- Primary key: w_personID
+- Functional dependency: w_personID → family_contact, testimony
+- This relation is in BCNF.
+
+Evidence Relation:
+- Primary key: evidence_id
+- Functional dependency: evidence_id → description, collection_date
+- This relation is in BCNF.
+
+Punishment Relation:
+- Primary key: {case_id, open_date, PersonID}
+- Functional dependency: {case_id, open_date, PersonID} → fine, jail_start_date, jail_end_date, death_penalty
+- This relation is in BCNF.
