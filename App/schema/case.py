@@ -523,17 +523,52 @@ class AuthRole(str, Enum):
     INVESTIGATOR = "investigator"
     PROSECUTOR = "prosecutor"
     ANALYST = "analyst"
+    VIEWER = "viewer"
 
 
 class PermissionScope(str, Enum):
     """Enumeration of permission scopes for fine-grained access control."""
-    PERSON_WRITE = "person:write"
-    CASE_OPEN = "case:open"
-    CASE_READ = "case:read"
-    CASE_CLOSE = "case:close"
-    EVIDENCE_WRITE = "evidence:write"
-    TRIAL_WRITE = "trial:write"
-    ANALYTICS_READ = "analytics:read"
+    # ── Address ───────────────────────────────────────────────
+    ADDRESS_READ    = "address:read"
+    ADDRESS_WRITE   = "address:write"
+
+    # ── Person ────────────────────────────────────────────────
+    PERSON_READ     = "person:read"
+    PERSON_WRITE    = "person:write"
+
+    # ── Case ──────────────────────────────────────────────────
+    CASE_READ       = "case:read"
+    CASE_OPEN       = "case:open"       # create + update
+    CASE_CLOSE      = "case:close"
+
+    # ── Officer assignment ────────────────────────────────────
+    OFFICER_ASSIGN  = "officer:assign"  # POST /cases/{id}/officers/{oid}
+    OFFICER_UNLINK  = "officer:unlink"  # DELETE /cases/{id}/officers/{oid}
+
+    # ── Evidence ──────────────────────────────────────────────
+    EVIDENCE_READ   = "evidence:read"
+    EVIDENCE_WRITE  = "evidence:write"  # add + update
+
+    # ── Witnesses & Testimony ─────────────────────────────────
+    WITNESS_READ    = "witness:read"
+    WITNESS_WRITE   = "witness:write"   # add witness + record testimony
+
+    # ── Suspects ──────────────────────────────────────────────
+    SUSPECT_READ    = "suspect:read"
+    SUSPECT_WRITE   = "suspect:write"   # add + update arrest status
+
+    # ── Victims ───────────────────────────────────────────────
+    VICTIM_READ     = "victim:read"
+    VICTIM_WRITE    = "victim:write"    # add victim to case
+
+    # ── Trials, Hearings, Punishments ─────────────────────────
+    TRIAL_READ      = "trial:read"
+    TRIAL_WRITE     = "trial:write"     # create trial + record hearing
+    PUNISHMENT_WRITE = "punishment:write"
+    JUDGE_ASSIGN    = "judge:assign"    # POST /trials/{id}/judge/{jid}
+
+    # ── Analytics & Snapshot ──────────────────────────────────
+    ANALYTICS_READ  = "analytics:read"
 
 
 class LoginRequest(SchemaModel):

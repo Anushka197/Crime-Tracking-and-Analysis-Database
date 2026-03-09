@@ -28,8 +28,9 @@ from App.CRUD.evidence import (
     list_case_evidence,
     update_evidence,
 )
+from App.CRUD.auth import enforce_rbac
 
-router = APIRouter(tags=["evidence"])
+router = APIRouter(tags=["evidence"], dependencies=[Depends(enforce_rbac)])
 
 
 @router.post("/cases/{case_id}/evidence", response_model=CaseEvidenceCreateResponse, status_code=201)

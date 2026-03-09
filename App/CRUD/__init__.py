@@ -103,8 +103,13 @@ from .analytics import (
 # ---- auth ----
 from .auth import (
     ROLE_SCOPE_MAP,
+    change_password,
     check_access,
-    login,
+    enforce_rbac,
+    get_current_active_user,
+    get_current_user,
+    login_user,
+    register_user,
 )
 
 __all__ = [
@@ -167,7 +172,12 @@ __all__ = [
     "get_case_evidence_witness_suspect",
     "get_crime_hotspots",
     # auth
-    "login",
+    "login_user",
+    "register_user",
+    "change_password",
+    "get_current_user",
+    "get_current_active_user",
+    "enforce_rbac",
     "check_access",
     "ROLE_SCOPE_MAP",
 ]

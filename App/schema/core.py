@@ -1,7 +1,7 @@
 from __future__ import annotations
 from datetime import date, datetime
 from enum import Enum
-from pydantic import BaseModel, ConfigDict, Field, model_validator
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, model_validator
 
 
 class SchemaModel(BaseModel):
@@ -197,6 +197,53 @@ class WitnessDetails(SchemaModel):
     testimony: str | None = Field(default=None, max_length=255)
 
 
+# ── Auth Schemas ─────────────────────────────────────────────────────────────
+
+class UserRegisterRequest(SchemaModel):
+    """Input: New user registration payload."""
+    username: str = Field(..., min_length=3, max_length=100)
+    email: EmailStr
+    mobile_number: str | None = Field(default=None, max_length=15)
+    password: str = Field(..., min_length=8, max_length=200)
+    confirm_password: str = Field(..., min_length=8, max_length=200)
+
+    @model_validator(mode="after")
+    def passwords_match(self) -> "UserRegisterRequest":
+        if self.password != self.confirm_password:
+            raise ValueError("password and confirm_password do not match.")
+        return self
+
+
+class UserLoginRequest(SchemaModel):
+    """Input: Login credentials."""
+    username: str = Field(..., min_length=1, max_length=100)
+    password: str = Field(..., min_length=1, max_length=200)
+
+
+class ChangePasswordRequest(SchemaModel):
+    """Input: Change password payload."""
+    username: str = Field(..., min_length=1, max_length=100)
+    current_password: str = Field(..., min_length=1, max_length=200)
+    new_password: str = Field(..., min_length=8, max_length=200)
+
+
+class TokenOut(SchemaModel):
+    """Response: JWT access token."""
+    access_token: str
+    token_type: str = "bearer"
+    expires_at: datetime
+
+
+class UserOut(SchemaModel):
+    """Response: Safe user representation (no password)."""
+    user_id: int
+    username: str
+    email: EmailStr
+    mobile_number: str | None = None
+    role: str
+    is_active: bool
+
+
 __all__ = [
     "SchemaModel",
     "PageMeta",
@@ -221,4 +268,9 @@ __all__ = [
     "SuspectDetails",
     "VictimDetails",
     "WitnessDetails",
+    "UserRegisterRequest",
+    "UserLoginRequest",
+    "ChangePasswordRequest",
+    "TokenOut",
+    "UserOut",
 ]

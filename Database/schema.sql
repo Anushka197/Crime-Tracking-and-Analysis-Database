@@ -173,3 +173,17 @@ CREATE TABLE Pointed_to (
     FOREIGN KEY (case_id, open_date, w_personID) REFERENCES Testifies_In(case_id, open_date, w_personID),
     FOREIGN KEY (s_personID) REFERENCES Suspect(s_personID)
 );
+-- Authentication table for users
+CREATE TABLE App_User (
+    user_id         SERIAL PRIMARY KEY,
+    username        VARCHAR(100) UNIQUE NOT NULL,
+    email           VARCHAR(255) UNIQUE NOT NULL,
+    hashed_password TEXT NOT NULL,                  -- bcrypt hash, never plaintext
+    role            VARCHAR(50) NOT NULL DEFAULT 'viewer'
+                        CHECK (role IN ('admin', 'officer', 'analyst', 'viewer')),
+    is_active       BOOLEAN NOT NULL DEFAULT TRUE,
+    created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    last_login      TIMESTAMPTZ,
+    mobile_number   VARCHAR(15)
+);
+

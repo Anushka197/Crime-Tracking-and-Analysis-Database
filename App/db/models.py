@@ -1,11 +1,12 @@
 from __future__ import annotations
-from datetime import date
+from datetime import date, datetime
 from typing import Optional
-from sqlalchemy import Date
+from sqlalchemy import Boolean, Date, DateTime
 from sqlalchemy import ForeignKey
 from sqlalchemy import ForeignKeyConstraint
 from sqlalchemy import Integer
 from sqlalchemy import String
+from sqlalchemy import func
 from sqlalchemy.orm import Mapped
 from sqlalchemy.orm import mapped_column
 from sqlalchemy.orm import relationship
@@ -491,6 +492,24 @@ class PointedTo(Base):
             f"witness_person_id={self.witness_person_id!r})"
         )
 
+class AppUser(Base):
+    __tablename__ = "app_user"
+
+    user_id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    username: Mapped[str] = mapped_column(String(100), unique=True, nullable=False)
+    email: Mapped[str] = mapped_column(String(255), unique=True, nullable=False)
+    hashed_password: Mapped[str] = mapped_column(String, nullable=False)  # bcrypt hash
+    role: Mapped[str] = mapped_column(String(50), nullable=False, default="viewer")
+    is_active: Mapped[bool] = mapped_column(Boolean, nullable=False, default=True)
+    mobile_number: Mapped[Optional[str]] = mapped_column(String(15))
+    created_at: Mapped[datetime] = mapped_column(
+        DateTime(timezone=True), nullable=False, server_default=func.now()
+    )
+    last_login: Mapped[Optional[datetime]] = mapped_column(DateTime(timezone=True))
+
+    def __repr__(self) -> str:
+        return f"AppUser(user_id={self.user_id!r}, username={self.username!r}, role={self.role!r})"
+
 
 __all__ = [
     "Base",
@@ -512,5 +531,6 @@ __all__ = [
     "InvolvedIn",
     "LinkedTo",
     "PointedTo",
+    "AppUser",
 ]
 

@@ -44,8 +44,9 @@ from App.CRUD.person import (
     update_address,
     update_person,
 )
+from App.CRUD.auth import enforce_rbac
 
-router = APIRouter(tags=["persons"])
+router = APIRouter(tags=["persons"], dependencies=[Depends(enforce_rbac)])
 
 
 # ---------------------------------------------------------------------------

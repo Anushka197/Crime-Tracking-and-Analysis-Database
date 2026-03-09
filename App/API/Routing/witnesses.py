@@ -30,8 +30,9 @@ from App.CRUD.witness import (
     list_case_testimonies,
     list_case_witnesses,
 )
+from App.CRUD.auth import enforce_rbac
 
-router = APIRouter(tags=["witnesses"])
+router = APIRouter(tags=["witnesses"], dependencies=[Depends(enforce_rbac)])
 
 
 @router.post("/cases/{case_id}/witnesses", response_model=CaseWitnessCreateResponse, status_code=201)
