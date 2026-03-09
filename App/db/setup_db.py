@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import argparse
 from pathlib import Path
 
 from psycopg2 import connect
@@ -71,10 +70,12 @@ def _execute_sql_file(
     sql_file: Path,
 ) -> None:
     sql_text = _read_sql_file(sql_file)
+    # print(sql_text)  # Debug: print the SQL being executed
     with connect(host=host, port=port, user=user, password=password, dbname=database) as conn:
         with conn.cursor() as cur:
             cur.execute(sql_text)
         conn.commit()
+
 
 
 def setup_database(
@@ -105,7 +106,25 @@ def setup_database(
         database=database,
         owner=owner,
     )
-
+    _drop_schema(
+        host=host,
+        port=port,
+        user=user,
+        password=password,
+        database=database,
+        schema_name=database,
+    )
+    conn = connect(host=host, port=port, user=user, password=password, dbname=database)
+    cur = conn.cursor()
+    cur.execute(
+        sql.SQL("CREATE SCHEMA {}; SET SEARCH_PATH TO {};").format(
+            sql.Identifier(database),
+            sql.Identifier(database)
+        )
+    )
+    conn.commit()
+    conn.close()
+    
     _execute_sql_file(
         host=host,
         port=port,
@@ -140,12 +159,22 @@ def setup_database(
 
 
 if __name__ == "__main__":
+    p = Path("G:\Coding\CrimeDB\Crime-Tracking-and-Analysis-Database\Database\seed_data.sql")
+    s = Path("G:\Coding\CrimeDB\Crime-Tracking-and-Analysis-Database\Database\schema.sql")
+
+    # re = _read_sql_file(s)
+    # print(re)
+
     url = setup_database(
         owner="postgres",
         host="localhost",
         user="postgres",
         password="Ma314DBS@",
-        database="crimedb",
         port=5432,
+        database="crimedb",
+        schema_file=s,
+        seed_file=p,
     )
-    print(url)
+    print(f"Database URL: {url}")
+    
+    

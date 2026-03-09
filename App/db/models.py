@@ -11,7 +11,7 @@ from sqlalchemy.orm import mapped_column
 from sqlalchemy.orm import relationship
 
 from .session import Base
-from .session import session
+from sqlalchemy import inspect
 
 
 class Address(Base):
@@ -272,7 +272,12 @@ class Evidence(Base):
     evidence_id: Mapped[int] = mapped_column(Integer, primary_key=True)
     description: Mapped[Optional[str]] = mapped_column(String(255))
     collection_date: Mapped[Optional[date]] = mapped_column(Date)
-    location_id: Mapped[Optional[int]] = mapped_column(Integer)
+
+    location_id: Mapped[Optional[int]] = mapped_column(
+        ForeignKey("address.address_id")
+    )
+
+    location: Mapped[Optional["Address"]] = relationship()
 
     collected_for_entries: Mapped[list["CollectedFor"]] = relationship(
         back_populates="evidence"
@@ -281,7 +286,8 @@ class Evidence(Base):
     def __repr__(self) -> str:
         return (
             f"Evidence(evidence_id={self.evidence_id!r}, "
-            f"collection_date={self.collection_date!r})"
+            f"collection_date={self.collection_date!r}, "
+            f"location_id={self.location_id!r})"
         )
 
 
@@ -488,7 +494,6 @@ class PointedTo(Base):
 
 __all__ = [
     "Base",
-    "session",
     "Address",
     "Person",
     "CaseDetail",
@@ -508,3 +513,4 @@ __all__ = [
     "LinkedTo",
     "PointedTo",
 ]
+

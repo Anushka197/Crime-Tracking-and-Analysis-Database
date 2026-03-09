@@ -10,9 +10,9 @@ engine = create_engine(
         password="Ma314DBS@",
         host="localhost",
         port=5432,
-        database="Demo"          # ← actual database name
+        database="crimedb"          # ← actual database name
     ),
-    connect_args={"options": "-csearch_path=crimetrack"}  # ← set schema
+    # connect_args={"options": "-csearch_path=public"}  # ← set schema to public (default)
 )
 Session = sessionmaker(bind=engine)
 session = Session()

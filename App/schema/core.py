@@ -122,14 +122,14 @@ class PersonRoleDetails(SchemaModel):
 
 
 class PersonSummary(SchemaModel):
-    """Response: Basic person info with role flags."""
+    """Response: Basic person info with active roles."""
     person_id: int = Field(..., gt=0)
     first_name: str | None = Field(default=None, max_length=100)
     middle_name: str | None = Field(default=None, max_length=100)
     last_name: str | None = Field(default=None, max_length=100)
     full_name: str | None = None
     address_id: int | None = Field(default=None, gt=0)
-    role_flags: PersonRoleFlags = Field(default_factory=PersonRoleFlags)
+    roles: list[PersonRole] = Field(default_factory=list)
 
 
 class PersonRead(PersonBase):
@@ -138,7 +138,7 @@ class PersonRead(PersonBase):
     address_id: int | None = Field(default=None, gt=0)
     address: AddressRead | None = None
     linked_addresses: list[AddressRead] = Field(default_factory=list)
-    role_flags: PersonRoleFlags = Field(default_factory=PersonRoleFlags)
+    roles: list[PersonRole] = Field(default_factory=list)
     role_details: PersonRoleDetails = Field(default_factory=PersonRoleDetails)
 
 
