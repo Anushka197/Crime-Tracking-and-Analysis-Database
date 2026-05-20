@@ -1,0 +1,36 @@
+services:
+  api:
+    build:
+      context: .
+    container_name: crimedb-api
+    ports:
+      - "8000:8000"
+    environment:
+      DB_HOST: db
+      DB_PORT: "5432"
+      DB_NAME: crimedb
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+    depends_on:
+      db:
+        condition: service_healthy
+
+  db:
+    image: postgres:16-alpine
+    container_name: crimedb-postgres
+    environment:
+      POSTGRES_DB: crimedb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - crimedb-postgres-data:/var/lib/postgresql/data
+      - ./Database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
+      - ./Database/seed_data.sql:/docker-entrypoint-initdb.d/02-seed_data.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d crimedb"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+volumes:
+  crimedb-postgres-data:

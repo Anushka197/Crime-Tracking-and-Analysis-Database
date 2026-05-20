@@ -120,21 +120,58 @@ Navigate to `/docs` in the application to access the interactive endpoints inter
 
 ## 🚀 Setup Instructions
 
-1. **Install dependencies**
+Follow these steps to run the backend API with its PostgreSQL database.
+
+1. **Install Docker Desktop**
+
+   Docker is required because the project runs the API and PostgreSQL database as containers.
+
+   You do not need to install PostgreSQL or pgAdmin separately.
+
+2. **Clone the repository**
+
    ```bash
-   pip install -r requirements.txt
+   git clone <repository-url>
    ```
 
-2. **Setup database**
-   Run the SQL files inside `/Database` to initialize the database schema and seed data.
+3. **Open the project folder**
 
-3. **Start the server**
    ```bash
-   uvicorn App.main:app --reload
+   cd Crime-Tracking-and-Analysis-Database
    ```
 
-4. **Access API docs**
-   Navigate to [http://localhost:8000/docs](http://localhost:8000/docs) in your browser.
+4. **Start the backend and database**
+
+   ```bash
+   docker compose up --build
+   ```
+
+   This command builds the FastAPI backend image, starts PostgreSQL, creates the `crimedb` database, and loads the schema and seed data from the `Database` folder.
+
+5. **Open the API documentation**
+
+   After the containers are running, open:
+
+   ```text
+   http://localhost:8000/docs
+   ```
+
+6. **Stop the project**
+
+   Press `Ctrl + C` in the terminal where Compose is running, then run:
+
+   ```bash
+   docker compose down
+   ```
+
+7. **Reset the database if needed**
+
+   The SQL files run only the first time the database volume is created. If you change `Database/schema.sql` or `Database/seed_data.sql` and want to rebuild the database from scratch, run:
+
+   ```bash
+   docker compose down -v
+   docker compose up --build
+   ```
 
 ---
 
