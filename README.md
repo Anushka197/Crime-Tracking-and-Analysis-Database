@@ -1,6 +1,6 @@
-# 📁 Crime Tracking and Analysis Database
+# 📁 Crime Intelligence System
 
-**Crime Tracking and Investigation System**
+**Crime Intelligence System**
 
 A backend API system for managing criminal investigations. 
 The system supports case management, evidence tracking, witness testimony, suspect identification, trial records, and crime analytics.
@@ -137,7 +137,7 @@ Follow these steps to run the backend API with its PostgreSQL database.
 3. **Open the project folder**
 
    ```bash
-   cd Crime-Tracking-and-Analysis-Database
+   cd Crime-Intelligence-System
    ```
 
 4. **Start the backend and database**
