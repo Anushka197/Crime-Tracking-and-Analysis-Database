@@ -1,0 +1,8 @@
+*.pyc
+*.pyd
+__pycache__/
+.git/
+crime/
+.venv/
+venv/
+*.log
