@@ -1,5 +1,5 @@
 # Build:
-#   docker build -t crimedb-api .
+#   docker build -t crime-intelligence-api .
 #
 # Run against a PostgreSQL instance on the host machine:
 #   docker run --rm -p 8000:8000 ^
@@ -8,12 +8,12 @@
 #     -e DB_NAME=crimedb ^
 #     -e DB_USER=postgres ^
 #     -e DB_PASSWORD=Ma314DBS@ ^
-#     crimedb-api
+#     crime-intelligence-api
 #
 # Or provide a single DATABASE_URL instead:
 #   docker run --rm -p 8000:8000 ^
 #     -e DATABASE_URL=postgresql://postgres:Ma314DBS%40host.docker.internal:5432/crimedb ^
-#     crimedb-api
+#     crime-intelligence-api
 
 FROM python:3.13-slim
 
