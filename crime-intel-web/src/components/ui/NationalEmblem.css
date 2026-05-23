@@ -1,0 +1,6 @@
+/* SVG fill/stroke can't use var() in attribute syntax — CSS classes bridge that gap */
+
+.emblem-bg   { fill: transparent;       stroke: var(--accent); }
+.emblem-ring { fill: none;              stroke: var(--accent); }
+.emblem-fill { fill: var(--accent); }
+.emblem-text { fill: var(--accent); font-family: var(--font-serif); }

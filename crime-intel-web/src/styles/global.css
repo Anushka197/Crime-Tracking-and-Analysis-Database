@@ -1,0 +1,34 @@
+/* ============================================================
+   GLOBAL DESIGN TOKENS — Crime Records Portal
+   Palette: Steel blue + warm gold
+   ============================================================ */
+
+:root {
+  /* Brand surfaces — blue family */
+  --brand:          #1e3a5f;   /* header background — deep steel blue        */
+  --panel-dark:     #162d4a;   /* card right panel — deeper blue             */
+  --panel-light:    #e8f0f8;   /* card left panel — pale blue-white          */
+  --surface:        #f0f4f8;   /* page background — cool off-white           */
+  --white:          #ffffff;   /* pure white where needed                    */
+
+  /* Accent — warm gold */
+  --accent:         #c9960a;   /* emblem, divider, focus ring, CTA button    */
+
+  /* Borders */
+  --border:         #b8cfe0;   /* borders on light surfaces                  */
+  --border-dark:    #2e5480;   /* borders on dark surfaces                   */
+
+  /* Text on light surfaces */
+  --ink:            #162d4a;   /* headings, labels, body text                */
+  --text-muted:     #4a6d8c;   /* secondary text on light — visible blue     */
+
+  /* Text on dark surfaces */
+  --ink-light:      #e8f0f8;   /* primary text on dark panels                */
+  --text-muted-dark:#7fa8cc;   /* secondary text on dark — clear mid-blue    */
+
+  /* Error */
+  --error:          #c0392b;
+
+  /* Typography */
+  --font-serif:     Georgia, "Times New Roman", serif;
+}

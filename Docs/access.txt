@@ -1,0 +1,108 @@
+Crime Tracking & Analysis API — Role Access Matrix
+Base URL prefix: /api/v1
+======================================================
+
+USER ROLES
+----------
+  Viewer  – Self-registered public user. Read-only access to all domain data.
+  Officer – Police officer working on cases. Full field operations (create/update cases,
+            evidence, suspects, witnesses, victims). Cannot manage trials or punishments.
+  Judge   – Judicial authority. Can read all case data and manage trials, hearings,
+            punishments, and judge assignments. Cannot open/close cases or manage field data.
+            Role value in the database: 'judge'.
+  Admin   – Full access to all endpoints.
+
+Legend: ✓ = access granted   ✗ = access denied
+======================================================
+
+AUTH
+----
+POST   /auth/register                                          Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+POST   /auth/login                                             Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+POST   /auth/change-password                                   Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+POST   /auth/access-check                                      Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+
+  Note: /auth/register, /auth/login are public (no JWT required).
+        /auth/change-password and /auth/access-check require a valid JWT.
+
+CASES
+-----
+POST   /cases                                                  Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /cases                                                  Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+GET    /cases/{case_id}                                        Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+PATCH  /cases/{case_id}                                        Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+PATCH  /cases/{case_id}/close                                  Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /cases/{case_id}/details                                Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+
+OFFICER ASSIGNMENT
+------------------
+POST   /cases/{case_id}/officers/{officer_id}                  Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+DELETE /cases/{case_id}/officers/{officer_id}                  Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+
+EVIDENCE
+--------
+POST   /cases/{case_id}/evidence                               Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /cases/{case_id}/evidence                               Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+GET    /evidence/{evidence_id}                                 Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+PATCH  /evidence/{evidence_id}                                 Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+
+SUSPECTS
+--------
+POST   /cases/{case_id}/suspects                               Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /cases/{case_id}/suspects                               Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+PATCH  /cases/{case_id}/suspects/{suspect_id}                  Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /suspects/{suspect_id}                                  Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+
+VICTIMS
+-------
+POST   /cases/{case_id}/victims                                Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /cases/{case_id}/victims                                Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+GET    /victims                                                Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+
+WITNESSES
+---------
+POST   /cases/{case_id}/witnesses                              Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /cases/{case_id}/witnesses                              Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+POST   /cases/{case_id}/witnesses/{witness_id}/testimony       Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /cases/{case_id}/testimonies                            Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+
+TRIALS
+------
+POST   /cases/{case_id}/trials                                 Viewer ✗  Officer ✗  Judge ✓  Admin ✓
+GET    /cases/{case_id}/trials                                 Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+GET    /cases/{case_id}/trials/{trial_id}                      Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+POST   /cases/{case_id}/trials/{trial_id}/hearing              Viewer ✗  Officer ✗  Judge ✓  Admin ✓
+POST   /cases/{case_id}/trials/{trial_id}/punishment           Viewer ✗  Officer ✗  Judge ✓  Admin ✓
+POST   /cases/{case_id}/trials/{trial_id}/judge/{judge_id}     Viewer ✗  Officer ✗  Judge ✓  Admin ✓
+
+PERSONS
+-------
+POST   /persons                                                Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /persons                                                Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+GET    /persons/{person_id}                                    Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+PATCH  /persons/{person_id}                                    Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /persons/{person_id}/cases                              Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+
+ADDRESSES
+---------
+POST   /addresses                                              Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+GET    /addresses                                              Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+GET    /addresses/{address_id}                                 Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+PATCH  /addresses/{address_id}                                 Viewer ✗  Officer ✓  Judge ✗  Admin ✓
+
+ANALYTICS
+---------
+GET    /cases/{case_id}/snapshot                               Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+GET    /analytics/hotspots                                     Viewer ✓  Officer ✓  Judge ✓  Admin ✓
+
+======================================================
+SUMMARY BY ROLE
+---------------
+Viewer  : Auth (public) + all GET/read endpoints. No write access anywhere.
+Officer : Everything Viewer can do + create/update cases, evidence, suspects,
+          witnesses, victims, persons, addresses, and officer assignments.
+          Cannot create trials, record hearings, assign punishments, or assign judges.
+Judge   : Everything Viewer can do + full trial management (create trials, record
+          hearings, assign punishments, assign judges). Cannot open/close cases
+          or manage field data (evidence, suspects, witnesses, victims).
+Admin   : Unrestricted access to all endpoints.

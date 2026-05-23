@@ -518,12 +518,12 @@ class CrimeHotspotResponse(SchemaModel):
 
 class AuthRole(str, Enum):
     """Enumeration of user roles for RBAC."""
-    ADMIN = "admin"
-    OFFICER = "officer"
+    ADMIN        = "admin"
+    OFFICER      = "officer"
     INVESTIGATOR = "investigator"
-    PROSECUTOR = "prosecutor"
-    ANALYST = "analyst"
-    VIEWER = "viewer"
+    JUDGE        = "judge"
+    ANALYST      = "analyst"
+    VIEWER       = "viewer"
 
 
 class PermissionScope(str, Enum):
