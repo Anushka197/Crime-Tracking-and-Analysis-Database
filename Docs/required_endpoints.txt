@@ -1,0 +1,227 @@
+Required Missing DELETE / Correction Endpoints
+===============================================
+These endpoints are absent from the current API but are needed to handle
+human error, data corrections, and real-world case lifecycle events.
+
+TRIALS
+------
+DELETE /cases/{case_id}/trials/{trial_id}                      – Remove a trial that was canceled, declared a mistrial, or entered by mistake.
+
+EVIDENCE
+--------
+DELETE /cases/{case_id}/evidence/{evidence_id}                 – Unlink and remove an evidence item that was logged incorrectly or attached to the wrong case.
+
+SUSPECTS
+--------
+DELETE /cases/{case_id}/suspects/{suspect_id}                  – Remove a wrongly linked suspect (mistaken identity, duplicate, or data entry error).
+
+WITNESSES
+---------
+DELETE /cases/{case_id}/witnesses/{witness_id}                 – Unlink a witness added to the wrong case or entered as a duplicate.
+
+VICTIMS
+-------
+DELETE /cases/{case_id}/victims/{victim_id}                    – Remove a victim incorrectly associated with a case.
+
+TESTIMONY
+---------
+DELETE /cases/{case_id}/witnesses/{witness_id}/testimony       – Delete a testimony that was recanted, recorded incorrectly, or submitted in error.
+
+PERSONS
+-------
+DELETE /persons/{person_id}                                    – Remove a duplicate or incorrectly created person record (should be blocked if person is linked to any active case).
+
+ADDRESSES
+---------
+DELETE /addresses/{address_id}                                 – Remove an orphaned or duplicate address record (should be blocked if address is in use).
+
+===============================================
+RECOMMENDATION
+--------------
+Rather than hard deletes, consider implementing soft deletes across all
+entities by adding a deleted_at timestamp or an is_active flag. This
+preserves the audit trail — critical in a legal/law enforcement context —
+while still allowing operators to correct mistakes and hide invalid records
+from active views.
+
+
+===============================================
+IMPLEMENTATION GUIDE
+===============================================
+For each missing endpoint, the files that need to be modified and what
+changes are required. No code — just what to do and where.
+
+-----------------------------------------------
+1. DELETE /cases/{case_id}/trials/{trial_id}
+-----------------------------------------------
+App/CRUD/trial.py
+  - Add a new function delete_trial(db, case_id, trial_id).
+  - Use the existing fetch_trial() helper to locate the record.
+  - Before deleting, check if any Punishment rows are linked to this trial
+    (same case_id + open_date). Either block deletion if punishments exist,
+    or cascade-delete them first depending on business rules.
+  - Delete the Trial row and commit.
+
+App/API/Routing/trials.py
+  - Add a new DELETE route: @router.delete("/cases/{case_id}/trials/{trial_id}").
+  - Import and call delete_trial() from App.CRUD.trial.
+  - Return 204 No Content on success, 404 if not found.
+
+App/schema/case.py
+  - No new schema needed; a simple success/detail message response is sufficient.
+
+App/CRUD/auth.py
+  - Add TRIAL_DELETE scope to PermissionScope enum in App/schema/case.py.
+  - Grant it to ADMIN and JUDGE in ROLE_SCOPE_MAP.
+  - Add the new route entry to _ENDPOINT_SCOPE_MAP.
+
+-----------------------------------------------
+2. DELETE /cases/{case_id}/evidence/{evidence_id}
+-----------------------------------------------
+App/CRUD/evidence.py
+  - Add a new function delete_case_evidence(db, case_id, evidence_id, open_date).
+  - Use fetch_case() to validate the case exists.
+  - Find the CollectedFor link row for this case + evidence combination.
+  - Check if any LinkedTo rows reference this evidence (suspect-evidence links).
+    Delete those first to avoid FK violations.
+  - Delete the CollectedFor row. Optionally delete the Evidence row itself if
+    it is no longer linked to any other case.
+  - Commit and return.
+
+App/API/Routing/evidence.py
+  - Add a new DELETE route: @router.delete("/cases/{case_id}/evidence/{evidence_id}").
+  - Import and call delete_case_evidence() from App.CRUD.evidence.
+  - Return 204 on success, 404 if the link or evidence is not found.
+
+App/CRUD/auth.py / App/schema/case.py
+  - Add EVIDENCE_DELETE scope, grant to OFFICER and ADMIN in ROLE_SCOPE_MAP.
+  - Add the route to _ENDPOINT_SCOPE_MAP.
+
+-----------------------------------------------
+3. DELETE /cases/{case_id}/suspects/{suspect_id}
+-----------------------------------------------
+App/CRUD/suspect.py
+  - Add a new function remove_case_suspect(db, case_id, suspect_id, open_date).
+  - Use fetch_case() to validate the case.
+  - Find and delete the InvolvedIn link row for this case + suspect.
+  - Find and delete any LinkedTo rows (suspect-evidence links) for this case.
+  - Find and delete any PointedTo rows where this suspect is pointed to by
+    witnesses in this case.
+  - Do NOT delete the Suspect profile itself — the person may be a suspect
+    in other cases.
+  - Commit and return.
+
+App/API/Routing/suspects.py
+  - Add a new DELETE route: @router.delete("/cases/{case_id}/suspects/{suspect_id}").
+  - Import and call remove_case_suspect() from App.CRUD.suspect.
+  - Return 204 on success, 404 if the link is not found.
+
+App/CRUD/auth.py / App/schema/case.py
+  - Add SUSPECT_DELETE scope, grant to OFFICER and ADMIN.
+  - Add the route to _ENDPOINT_SCOPE_MAP.
+
+-----------------------------------------------
+4. DELETE /cases/{case_id}/witnesses/{witness_id}
+-----------------------------------------------
+App/CRUD/witness.py
+  - Add a new function remove_case_witness(db, case_id, witness_id, open_date).
+  - Use fetch_case() to validate the case.
+  - Find and delete all PointedTo rows for this witness in this case (these
+    are the suspect accusations tied to their testimony).
+  - Find and delete the TestifiesIn link row for this case + witness.
+  - Do NOT delete the Witness profile itself — the person may testify in
+    other cases.
+  - Commit and return.
+
+App/API/Routing/witnesses.py
+  - Add a new DELETE route: @router.delete("/cases/{case_id}/witnesses/{witness_id}").
+  - Import and call remove_case_witness() from App.CRUD.witness.
+  - Return 204 on success, 404 if the link is not found.
+
+App/CRUD/auth.py / App/schema/case.py
+  - Add WITNESS_DELETE scope, grant to OFFICER and ADMIN.
+  - Add the route to _ENDPOINT_SCOPE_MAP.
+
+-----------------------------------------------
+5. DELETE /cases/{case_id}/victims/{victim_id}
+-----------------------------------------------
+App/CRUD/victim.py
+  - Add a new function remove_case_victim(db, case_id, victim_id, open_date).
+  - Use fetch_case() to validate the case.
+  - Find and delete the AffectedBy link row for this case + victim.
+  - Do NOT delete the Victim profile itself.
+  - Commit and return.
+
+App/API/Routing/victims.py
+  - Add a new DELETE route: @router.delete("/cases/{case_id}/victims/{victim_id}").
+  - Import and call remove_case_victim() from App.CRUD.victim.
+  - Return 204 on success, 404 if the link is not found.
+
+App/CRUD/auth.py / App/schema/case.py
+  - Add VICTIM_DELETE scope, grant to OFFICER and ADMIN.
+  - Add the route to _ENDPOINT_SCOPE_MAP.
+
+-----------------------------------------------
+6. DELETE /cases/{case_id}/witnesses/{witness_id}/testimony
+-----------------------------------------------
+App/CRUD/witness.py
+  - Add a new function delete_witness_testimony(db, case_id, witness_id, open_date).
+  - Use fetch_case() to validate the case.
+  - Find the TestifiesIn row for this witness + case.
+  - Delete all PointedTo rows linked to this testimony (FK dependency).
+  - Clear the testimony text on the Witness profile (set to None), since
+    the Witness table stores testimony as a column rather than a separate table.
+  - Commit and return.
+
+App/API/Routing/witnesses.py
+  - Add a new DELETE route:
+    @router.delete("/cases/{case_id}/witnesses/{witness_id}/testimony").
+  - Import and call delete_witness_testimony() from App.CRUD.witness.
+  - Return 204 on success, 404 if testimony or witness link is not found.
+
+App/CRUD/auth.py / App/schema/case.py
+  - Reuse WITNESS_DELETE scope or add a dedicated TESTIMONY_DELETE scope.
+  - Add the route to _ENDPOINT_SCOPE_MAP.
+
+-----------------------------------------------
+7. DELETE /persons/{person_id}
+-----------------------------------------------
+App/CRUD/person.py
+  - Add a new function delete_person(db, person_id).
+  - Before deleting, check all role-link tables: PoliceOfficer, Suspect,
+    Victim, Witness, Criminal, and all junction tables (AssignedTo,
+    InvolvedIn, AffectedBy, TestifiesIn, Punishment, LinkedTo, PointedTo).
+  - If the person is linked to any active case (case_status != 'closed'),
+    raise a ValueError and block the deletion.
+  - If safe to delete, remove role profile rows first (FK order), then
+    the Person row itself.
+  - Commit and return.
+
+App/API/Routing/persons.py
+  - Add a new DELETE route: @router.delete("/persons/{person_id}").
+  - Import and call delete_person() from App.CRUD.person.
+  - Return 204 on success, 404 if not found, 400 if blocked by active links.
+
+App/CRUD/auth.py / App/schema/case.py
+  - Add PERSON_DELETE scope, grant to ADMIN only.
+  - Add the route to _ENDPOINT_SCOPE_MAP.
+
+-----------------------------------------------
+8. DELETE /addresses/{address_id}
+-----------------------------------------------
+App/CRUD/person.py
+  - Add a new function delete_address(db, address_id).
+  - Before deleting, check if any Person rows reference this address_id,
+    or if any CaseDetail rows reference it as crime_location,
+    or if any Evidence rows reference it as location_id.
+  - If any references exist, raise a ValueError and block the deletion.
+  - If safe, delete the Address row and commit.
+
+App/API/Routing/persons.py
+  - Add a new DELETE route: @router.delete("/addresses/{address_id}").
+  - Import and call delete_address() from App.CRUD.person.
+  - Return 204 on success, 404 if not found, 400 if still referenced.
+
+App/CRUD/auth.py / App/schema/case.py
+  - Add ADDRESS_DELETE scope, grant to OFFICER and ADMIN.
+  - Add the route to _ENDPOINT_SCOPE_MAP.

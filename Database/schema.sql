@@ -178,9 +178,9 @@ CREATE TABLE App_User (
     user_id         SERIAL PRIMARY KEY,
     username        VARCHAR(100) UNIQUE NOT NULL,
     email           VARCHAR(255) UNIQUE NOT NULL,
-    hashed_password TEXT NOT NULL,                  -- bcrypt hash, never plaintext
+    hashed_password TEXT NOT NULL,                  -- Argon2 hash, never plaintext
     role            VARCHAR(50) NOT NULL DEFAULT 'viewer'
-                        CHECK (role IN ('admin', 'officer', 'analyst', 'viewer')),
+                        CHECK (role IN ('admin', 'officer', 'investigator', 'judge', 'analyst', 'viewer')),
     is_active       BOOLEAN NOT NULL DEFAULT TRUE,
     created_at      TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     last_login      TIMESTAMPTZ,

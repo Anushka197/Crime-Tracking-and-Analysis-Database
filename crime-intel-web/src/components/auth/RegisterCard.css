@@ -1,0 +1,45 @@
+.reg-card {
+  display: flex;
+  width: 100%;
+  max-width: 72rem;
+  height: 100%;
+  max-height: 100%;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+/* Left panel */
+.reg-card__left {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.reg-card__geo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: var(--accent);
+}
+
+.reg-card__geo-sm { opacity: 0.18; }
+.reg-card__geo-lg { opacity: 0.28; }
+
+/* Accent divider */
+.reg-card__divider {
+  width: 3px;
+  flex-shrink: 0;
+  background-color: var(--accent);
+}
+
+/* Right panel */
+.reg-card__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2.5rem;
+  background-color: var(--panel-dark);
+  overflow-y: auto;
+}

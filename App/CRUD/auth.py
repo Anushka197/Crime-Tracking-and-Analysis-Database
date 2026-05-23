@@ -255,8 +255,8 @@ ROLE_SCOPE_MAP: dict[AuthRole, list[PermissionScope]] = {
         S.ANALYTICS_READ,
     ],
 
-    # ── PROSECUTOR: all prosecution/trial/punishment authority ────────────
-    AuthRole.PROSECUTOR: [
+    # ── JUDGE: all prosecution/trial/punishment authority ────────────────
+    AuthRole.JUDGE: [
         S.CASE_READ,
         S.PERSON_READ,
         S.EVIDENCE_READ,
