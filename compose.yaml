@@ -1,22 +1,7 @@
 name: crime-intelligence-system
 
 services:
-  api:
-    build:
-      context: .
-    container_name: crime-intelligence-api
-    ports:
-      - "8000:8000"
-    environment:
-      DB_HOST: db
-      DB_PORT: "5432"
-      DB_NAME: crimedb
-      DB_USER: postgres
-      DB_PASSWORD: postgres
-    depends_on:
-      db:
-        condition: service_healthy
-
+  # --- RELATIONAL DATABASE ---
   db:
     image: postgres:16-alpine
     container_name: crime-intelligence-postgres
@@ -24,25 +9,41 @@ services:
       POSTGRES_DB: crimedb
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432" # Exposed so your local Python Faker script can connect!
     volumes:
       - crime-intelligence-postgres-data:/var/lib/postgresql/data
       - ./Database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql:ro
-      - ./Database/seed_data.sql:/docker-entrypoint-initdb.d/02-seed_data.sql:ro
+      # Notice: seed_data.sql has been removed from here!
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres -d crimedb"]
       interval: 5s
       timeout: 5s
       retries: 10
 
-  frontend:
-    build:
-      context: ./crime-intel-web
-    ports:
-      - "5173:5173"
+  # --- BIG DATA COMPONENTS ---
+  namenode:
+    image: bde2020/hadoop-namenode:2.0.0-hadoop3.2.1-java8
+    container_name: crime-hadoop-namenode
     environment:
-      VITE_API_URL: "http://localhost:8000"
+      - CLUSTER_NAME=crime-cluster
+    ports:
+      - "9870:9870" # HDFS Web UI
+      - "9000:9000" # HDFS internal communication
+    volumes:
+      - hadoop-namenode-data:/hadoop/dfs/name
+
+  datanode:
+    image: bde2020/hadoop-datanode:2.0.0-hadoop3.2.1-java8
+    container_name: crime-hadoop-datanode
+    environment:
+      SERVICE_PRECONDITION: "namenode:9870"
+    volumes:
+      - hadoop-datanode-data:/hadoop/dfs/data
     depends_on:
-      - api
+      - namenode
 
 volumes:
   crime-intelligence-postgres-data:
+  hadoop-namenode-data:
+  hadoop-datanode-data:

@@ -5,7 +5,7 @@
 
 
 CREATE TABLE Address (
-    address_id      INT PRIMARY KEY NOT NULL,
+    address_id      SERIAL PRIMARY KEY,
     street_address  VARCHAR(255),
     city            VARCHAR(100),
     state           VARCHAR(100),
@@ -14,7 +14,7 @@ CREATE TABLE Address (
 );
 
 CREATE TABLE Person (
-    personID        INT PRIMARY KEY NOT NULL,
+    personID        SERIAL PRIMARY KEY,
     gender          CHAR(1),
     birth_date      DATE,
     first_name      VARCHAR(100),
@@ -22,22 +22,24 @@ CREATE TABLE Person (
     last_name       VARCHAR(100),
     address_id      INT,
     occupation      VARCHAR(100),
-    contact_number  CHAR(15),
+    contact_number  VARCHAR(15),
+    family_contact  VARCHAR(15),
+    physical_description TEXT,
     FOREIGN KEY (address_id) REFERENCES Address(address_id)
 );
 
 CREATE TABLE Case_Details (
-    case_id         INT NOT NULL,
+    case_id         SERIAL,
     open_date       DATE NOT NULL,
     crime_date      DATE,
     end_date        DATE,
     complaint_detail VARCHAR(255),
-    crime_type      CHAR(50),
+    crime_type      VARCHAR(50),
     crime_location  INT,
-    case_status     CHAR(10),
-    personID        INT,
+    case_status     VARCHAR(10),
+    complainant_id        INT,
     PRIMARY KEY (case_id, open_date),
-    FOREIGN KEY (personID) REFERENCES Person(personID),
+    FOREIGN KEY (complainant_id) REFERENCES Person(personID),
     FOREIGN KEY (crime_location) REFERENCES Address(address_id)
 );
 
@@ -49,52 +51,48 @@ CREATE TABLE Trial (
     judge_id        INT,
     court_level     VARCHAR(50),
     PRIMARY KEY (case_id, open_date, trial_number),
-    FOREIGN KEY (case_id, open_date) REFERENCES Case_Details(case_id, open_date)
+    FOREIGN KEY (case_id, open_date) REFERENCES Case_Details(case_id, open_date),
+    FOREIGN KEY (judge_id) REFERENCES Person(personID)
 );
 
 CREATE TABLE Police_Officer (
-    p_personID      INT PRIMARY KEY NOT NULL,
-    rank            CHAR(50),
-    department      CHAR(100),
+    p_personID      INT PRIMARY KEY,
+    rank            VARCHAR(50),
+    department      VARCHAR(100),
     FOREIGN KEY (p_personID) REFERENCES Person(personID)
 );
 
 CREATE TABLE Criminal (
-    c_personID      INT PRIMARY KEY NOT NULL,
-    c_family_contact CHAR(15),
+    c_personID INT PRIMARY KEY,
+    arrest_status       VARCHAR(50),
     FOREIGN KEY (c_personID) REFERENCES Person(personID)
 );
 
 CREATE TABLE Suspect (
-    s_personID          INT PRIMARY KEY NOT NULL,
-    physical_description VARCHAR(255),
-    family_contact      CHAR(15),
-    arrest_status       CHAR(50),
+    s_personID          INT PRIMARY KEY,
+    arrest_status       VARCHAR(50),
     FOREIGN KEY (s_personID) REFERENCES Person(personID)
 );
 
 CREATE TABLE Victim (
-    v_personID      INT PRIMARY KEY NOT NULL,
+    v_personID      INT PRIMARY KEY,
     harm_details    VARCHAR(255),
-    family_contact  CHAR(15),
     FOREIGN KEY (v_personID) REFERENCES Person(personID)
 );
 
 CREATE TABLE Witness (
-    w_personID      INT PRIMARY KEY NOT NULL,
-    family_contact  CHAR(15),
-    testimony       VARCHAR(255),
+    w_personID      INT PRIMARY KEY,
+    testimony       TEXT,
     FOREIGN KEY (w_personID) REFERENCES Person(personID)
 );
 
 CREATE TABLE Evidence (
-    evidence_id     INT PRIMARY KEY NOT NULL,
+    evidence_id     SERIAL PRIMARY KEY,
     description     VARCHAR(255),
-    collection_date DATE
+    collection_date DATE,
+    location_id     INT,
+    FOREIGN KEY (location_id) REFERENCES Address(address_id)
 );
-
-ALTER TABLE Evidence
-    ADD location_id INT;
 
 CREATE TABLE Collected_For (
     evidence_id     INT NOT NULL,
@@ -139,7 +137,7 @@ CREATE TABLE Punishment (
     fine            INT,
     jail_start_date DATE,
     jail_end_date   DATE,
-    death_penalty   CHAR(1),
+    death_penalty   BOOLEAN,
     PRIMARY KEY (c_personID, case_id, open_date),
     FOREIGN KEY (c_personID) REFERENCES Criminal(c_personID),
     FOREIGN KEY (case_id, open_date) REFERENCES Case_Details(case_id, open_date)
@@ -160,7 +158,7 @@ CREATE TABLE Linked_to (
     s_personID      INT NOT NULL,
     evidence_id     INT NOT NULL,
     PRIMARY KEY (case_id, open_date, s_personID, evidence_id),
-    FOREIGN KEY (case_id, open_date, evidence_id) REFERENCES Collected_For(case_id, open_date, evidence_id),
+    FOREIGN KEY (evidence_id, case_id, open_date) REFERENCES Collected_For(evidence_id, case_id, open_date),
     FOREIGN KEY (s_personID) REFERENCES Suspect(s_personID)
 );
 
@@ -178,7 +176,7 @@ CREATE TABLE App_User (
     user_id         SERIAL PRIMARY KEY,
     username        VARCHAR(100) UNIQUE NOT NULL,
     email           VARCHAR(255) UNIQUE NOT NULL,
-    hashed_password TEXT NOT NULL,                  -- Argon2 hash, never plaintext
+    hashed_password TEXT NOT NULL,
     role            VARCHAR(50) NOT NULL DEFAULT 'viewer'
                         CHECK (role IN ('admin', 'officer', 'investigator', 'judge', 'analyst', 'viewer')),
     is_active       BOOLEAN NOT NULL DEFAULT TRUE,
