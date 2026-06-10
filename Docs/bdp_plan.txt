@@ -1,0 +1,23 @@
+Phase 1: The Transactional System (Completed)
+Generate 15+ million rows of relational data.
+Load the raw data into the live PostgreSQL database.
+
+Phase 2: The Data Lake Ingestion (Next Step)
+Create storage directories inside the Hadoop (HDFS) container.
+Transfer the massive CSV files from your local output_data folder into the Hadoop container.
+Load those files into the distributed HDFS file system (The "Bronze Layer").
+
+Phase 3: The Compute Engine Setup
+Update your compose.yaml file to add an Apache Spark container.
+Boot up the Spark cluster to sit on top of your Hadoop data.
+
+Phase 4: The Big Data Transformation (Scala)
+Write a Spark application using Scala.
+Instruct Spark to read the raw CSVs from HDFS.
+Clean, partition (e.g., by crime_type), and compress the data.
+Save the highly optimized data back to HDFS as Parquet files (The "Gold Layer").
+
+Phase 5: The Optimization Showcase (The Interview Flex)
+Run a massive analytical query against the raw CSV files and record the slow execution time.
+Run the exact same query against the optimized Parquet files and record the lightning-fast execution time.
+Document these performance metrics to prove your Big Data engineering skills.
