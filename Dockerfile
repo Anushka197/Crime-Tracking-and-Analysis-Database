@@ -1,12 +1,11 @@
 FROM python:3.13-slim
 
+# Keep system-level environment variables
 ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
-ENV DB_HOST=host.docker.internal
-ENV DB_PORT=5432
-ENV DB_NAME=crimedb
-ENV DB_USER=postgres
-ENV DB_PASSWORD=Ma314DBS@
+
+# Removed hardcoded database credentials here! 
+# They will be injected at runtime via the .env file.
 
 WORKDIR /app
 
