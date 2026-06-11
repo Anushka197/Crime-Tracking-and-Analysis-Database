@@ -1,13 +1,13 @@
-Phase 1: The Transactional System (Completed)
+Phase 1: The Transactional System
 Generate 15+ million rows of relational data.
 Load the raw data into the live PostgreSQL database.
 
-Phase 2: The Data Lake Ingestion (Next Step)
+Phase 2: The Data Lake Ingestion (Completed)
 Create storage directories inside the Hadoop (HDFS) container.
 Transfer the massive CSV files from your local output_data folder into the Hadoop container.
 Load those files into the distributed HDFS file system (The "Bronze Layer").
 
-Phase 3: The Compute Engine Setup
+Phase 3: The Compute Engine Setup (Next Step)
 Update your compose.yaml file to add an Apache Spark container.
 Boot up the Spark cluster to sit on top of your Hadoop data.
 
